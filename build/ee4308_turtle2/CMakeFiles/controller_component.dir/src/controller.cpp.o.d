@@ -1,5 +1,5 @@
 CMakeFiles/controller_component.dir/src/controller.cpp.o: \
- /home/phantona/ee4308/src/ee4308_turtle2/src/controller.cpp \
+ /home/phantona/ee4308-proj2/src/ee4308_turtle2/src/controller.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -737,7 +737,7 @@ CMakeFiles/controller_component.dir/src/controller.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__builder.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__type_support.hpp \
- /home/phantona/ee4308/src/ee4308_turtle2/include/ee4308_turtle2/core.hpp \
+ /home/phantona/ee4308-proj2/src/ee4308_turtle2/include/ee4308_turtle2/core.hpp \
  /opt/ros/jazzy/include/tf2/tf2/exceptions.h \
  /opt/ros/jazzy/include/tf2/tf2/exceptions.hpp \
  /opt/ros/jazzy/include/tf2/tf2/visibility_control.h \

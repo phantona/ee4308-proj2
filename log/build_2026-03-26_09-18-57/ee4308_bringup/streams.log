@@ -1,0 +1,75 @@
+[0.016s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308-proj2/src/ee4308_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308-proj2/install/ee4308_bringup
+[0.081s] -- The C compiler identification is GNU 13.3.0
+[0.136s] -- The CXX compiler identification is GNU 13.3.0
+[0.151s] -- Detecting C compiler ABI info
+[0.236s] -- Detecting C compiler ABI info - done
+[0.243s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.243s] -- Detecting C compile features
+[0.243s] -- Detecting C compile features - done
+[0.252s] -- Detecting CXX compiler ABI info
+[0.341s] -- Detecting CXX compiler ABI info - done
+[0.348s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.349s] -- Detecting CXX compile features
+[0.349s] -- Detecting CXX compile features - done
+[0.353s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.482s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.546s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.667s] -- Configuring done (0.6s)
+[0.670s] -- Generating done (0.0s)
+[0.672s] -- Build files have been written to: /home/phantona/ee4308-proj2/build/ee4308_bringup
+[0.677s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308-proj2/src/ee4308_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308-proj2/install/ee4308_bringup
+[0.678s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_bringup -- -j16 -l16
+[0.719s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_bringup -- -j16 -l16
+[0.720s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308-proj2/build/ee4308_bringup
+[0.727s] -- Install configuration: ""
+[0.727s] -- Execute custom install script
+[0.728s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//launch/proj2_sim.launch.py
+[0.736s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//launch/sim.launch.py
+[0.744s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//launch/spawn_models.launch.py
+[0.753s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//rviz/proj2.rviz
+[0.761s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//params/proj2.yaml
+[0.768s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//params/ros_gz_bridge_proj2.yaml
+[0.777s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//maps/proj2_sim.pgm
+[0.785s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//maps/proj2_sim.yaml
+[0.793s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//worlds/empty_world.world
+[0.802s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//worlds/turtlebot3_house.world
+[0.812s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//worlds/turtlebot3_world.world
+[0.821s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/README
+[0.830s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/drone.urdf
+[0.838s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/drone_proj2.sdf
+[0.846s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/materials/textures/led.jpg
+[0.855s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/materials/textures/spotlight.jpg
+[0.863s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/iris.dae
+[0.871s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/led.dae
+[0.880s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/led_lamp.dae
+[0.889s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/propeller_ccw.dae
+[0.897s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/propeller_cw.dae
+[0.907s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/spotlight.dae
+[0.916s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/vi_camera.dae
+[0.925s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/vi_camera.jpg
+[0.934s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/vi_sensor.dae
+[0.943s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/vi_sensor.jpg
+[0.951s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/x3.dae
+[0.960s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/x3.jpg
+[0.968s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/model.config
+[0.976s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/drone/model.sdf
+[0.985s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/turtle/turtle.urdf
+[0.993s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/turtle/turtle_proj1.sdf
+[1.001s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup//models/turtle/turtle_proj2.sdf
+[1.012s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ament_index/resource_index/package_run_dependencies/ee4308_bringup
+[1.021s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ament_index/resource_index/parent_prefix_path/ee4308_bringup
+[1.029s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/environment/ament_prefix_path.sh
+[1.029s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/environment/ament_prefix_path.dsv
+[1.037s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/environment/path.sh
+[1.037s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/environment/path.dsv
+[1.046s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/local_setup.bash
+[1.054s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/local_setup.sh
+[1.062s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/local_setup.zsh
+[1.070s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/local_setup.dsv
+[1.078s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/package.dsv
+[1.086s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ament_index/resource_index/packages/ee4308_bringup
+[1.094s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.102s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/cmake/ee4308_bringupConfig.cmake
+[1.112s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/cmake/ee4308_bringupConfig-version.cmake
+[1.120s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_bringup/share/ee4308_bringup/package.xml
+[1.132s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308-proj2/build/ee4308_bringup

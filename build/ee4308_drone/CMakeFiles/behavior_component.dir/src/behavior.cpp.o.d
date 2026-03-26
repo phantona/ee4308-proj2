@@ -1,7 +1,7 @@
 CMakeFiles/behavior_component.dir/src/behavior.cpp.o: \
- /home/phantona/ee4308/src/ee4308_drone/src/behavior.cpp \
+ /home/phantona/ee4308-proj2/src/ee4308_drone/src/behavior.cpp \
  /usr/include/stdc-predef.h \
- /home/phantona/ee4308/src/ee4308_drone/include/ee4308_drone/behavior.hpp \
+ /home/phantona/ee4308-proj2/src/ee4308_drone/include/ee4308_drone/behavior.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -743,7 +743,7 @@ CMakeFiles/behavior_component.dir/src/behavior.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
- /home/phantona/ee4308/src/ee4308_drone/include/ee4308_drone/core.hpp \
+ /home/phantona/ee4308-proj2/src/ee4308_drone/include/ee4308_drone/core.hpp \
  /opt/ros/jazzy/include/tf2/tf2/exceptions.h \
  /opt/ros/jazzy/include/tf2/tf2/exceptions.hpp \
  /opt/ros/jazzy/include/tf2/tf2/visibility_control.h \

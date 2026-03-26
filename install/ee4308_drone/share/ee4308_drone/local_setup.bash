@@ -1,1 +1,1 @@
-/home/phantona/ee4308/build/ee4308_drone/ament_cmake_environment_hooks/local_setup.bash
+/home/phantona/ee4308-proj2/build/ee4308_drone/ament_cmake_environment_hooks/local_setup.bash

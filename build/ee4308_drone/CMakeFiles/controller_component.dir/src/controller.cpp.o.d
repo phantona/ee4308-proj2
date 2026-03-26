@@ -1,7 +1,7 @@
 CMakeFiles/controller_component.dir/src/controller.cpp.o: \
- /home/phantona/ee4308/src/ee4308_drone/src/controller.cpp \
+ /home/phantona/ee4308-proj2/src/ee4308_drone/src/controller.cpp \
  /usr/include/stdc-predef.h \
- /home/phantona/ee4308/src/ee4308_drone/include/ee4308_drone/controller.hpp \
+ /home/phantona/ee4308-proj2/src/ee4308_drone/include/ee4308_drone/controller.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -731,4 +731,4 @@ CMakeFiles/controller_component.dir/src/controller.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/phantona/ee4308/src/ee4308_drone/include/ee4308_drone/core.hpp
+ /home/phantona/ee4308-proj2/src/ee4308_drone/include/ee4308_drone/core.hpp
