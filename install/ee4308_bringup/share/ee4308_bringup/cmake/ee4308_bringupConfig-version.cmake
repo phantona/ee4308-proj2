@@ -1,0 +1,1 @@
+/home/phantona/ee4308-proj2/build/ee4308_bringup/ament_cmake_core/ee4308_bringupConfig-version.cmake

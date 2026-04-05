@@ -13,8 +13,8 @@ drone:
     ros__parameters:
       lookahead_distance: 1.0
       max_xy_vel: 1.0
-      max_z_vel: 0.5  #changed by jian wen
-      yaw_vel: -0.524 #changed by jian wen
+      max_z_vel: 1.0
+      yaw_vel: 0.0
       kp_xy: 1.0
       kp_z: 1.0
       frequency: 20.0
@@ -28,16 +28,16 @@ drone:
   estimator:
     ros__parameters:
       frequency: 30.0
-      var_imu_x: 0.5 #changed by shyam
-      var_imu_y: 0.5 #changed by shyam
-      var_imu_z: 10.0 #changed by shyam
-      var_imu_a: 1.0  #changed by shyam
-      var_gps_x: 0.2
-      var_gps_y: 0.2
-      var_gps_z: 0.1
-      var_baro: 10.0
-      var_sonar: 0.01 #changed by shyam, im lowering this to trust the sonar more
-      var_magnet: 0.1  #changed by shyam
+      var_imu_x: 1.0
+      var_imu_y: 1.0
+      var_imu_z: 1.0
+      var_imu_a: 1.0
+      var_gps_x: 1.0
+      var_gps_y: 1.0
+      var_gps_z: 1.0
+      var_baro: 1.0
+      var_sonar: 1.0
+      var_magnet: 1.0
       use_sim_time: true
       use_ground_truth: false
       verbose: true

@@ -1,0 +1,4 @@
+ee4308::drone::Behavior;lib/libbehavior_component.so
+ee4308::drone::Controller;lib/libcontroller_component.so
+ee4308::drone::Estimator;lib/libestimator_component.so
+ee4308::drone::Planner;lib/libplanner_component.so

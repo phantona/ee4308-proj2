@@ -1,18 +1,7 @@
-# --- ROS 2 / Colcon specific ---
-build/
-install/
-log/
-
-# --- VS Code specific ---
+# Ignore VSCode workspace settings
 .vscode/
+
+#Ignore VSCode database files
 *.browse.vc.db-shm
 *.browse.vc.db
 *.browse.vc.db-wal
-
-# --- Python specific ---
-__pycache__/
-*.pyc
-
-# --- OS specific ---
-.DS_Store
-Thumbs.db
