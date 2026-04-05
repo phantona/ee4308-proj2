@@ -1,0 +1,43 @@
+[ 12%] Built target map_loader
+[ 37%] Built target controller
+[ 37%] Built target behavior
+[ 50%] Built target map_loader_component
+[ 75%] Built target controller_component
+[ 75%] Built target planner
+[ 87%] Built target behavior_component
+[100%] Built target planner_component
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/ee4308_turtle2/map_loader
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/ee4308_turtle2/behavior
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/ee4308_turtle2/controller
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/ee4308_turtle2/planner
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ament_index/resource_index/package_run_dependencies/ee4308_turtle2
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ament_index/resource_index/parent_prefix_path/ee4308_turtle2
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/environment/path.sh
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/environment/path.dsv
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.bash
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.sh
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.zsh
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.dsv
+-- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/package.dsv
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ament_index/resource_index/packages/ee4308_turtle2
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ament_index/resource_index/rclcpp_components/ee4308_turtle2
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ee4308_turtle2Config.cmake
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ee4308_turtle2Config-version.cmake
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/package.xml
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/libmap_loader_component.so
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/libbehavior_component.so
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/libcontroller_component.so
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/libplanner_component.so
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_map_loader_componentExport.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_map_loader_componentExport-noconfig.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_behavior_componentExport.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_behavior_componentExport-noconfig.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_controller_componentExport.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_controller_componentExport-noconfig.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_planner_componentExport.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_planner_componentExport-noconfig.cmake

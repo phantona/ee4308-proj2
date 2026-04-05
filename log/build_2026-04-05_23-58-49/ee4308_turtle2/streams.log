@@ -1,0 +1,47 @@
+[0.028s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_turtle2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_turtle2 -- -j16 -l16
+[0.158s] [ 12%] Built target controller
+[0.159s] [ 25%] Built target behavior
+[0.159s] [ 37%] Built target map_loader_component
+[0.162s] [ 50%] Built target planner_component
+[0.162s] [ 62%] Built target controller_component
+[0.165s] [ 87%] Built target planner
+[0.166s] [ 87%] Built target behavior_component
+[0.166s] [100%] Built target map_loader
+[0.191s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_turtle2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_turtle2 -- -j16 -l16
+[0.193s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_turtle2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308-proj2/build/ee4308_turtle2
+[0.210s] -- Install configuration: ""
+[0.211s] -- Execute custom install script
+[0.213s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/ee4308_turtle2/map_loader
+[0.214s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/ee4308_turtle2/behavior
+[0.216s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/ee4308_turtle2/controller
+[0.216s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/ee4308_turtle2/planner
+[0.216s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ament_index/resource_index/package_run_dependencies/ee4308_turtle2
+[0.219s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ament_index/resource_index/parent_prefix_path/ee4308_turtle2
+[0.219s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/environment/ament_prefix_path.sh
+[0.220s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/environment/ament_prefix_path.dsv
+[0.220s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/environment/path.sh
+[0.220s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/environment/path.dsv
+[0.221s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.bash
+[0.221s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.sh
+[0.221s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.zsh
+[0.221s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.dsv
+[0.222s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/package.dsv
+[0.234s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ament_index/resource_index/packages/ee4308_turtle2
+[0.234s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ament_index/resource_index/rclcpp_components/ee4308_turtle2
+[0.235s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ament_cmake_export_targets-extras.cmake
+[0.235s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ee4308_turtle2Config.cmake
+[0.235s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ee4308_turtle2Config-version.cmake
+[0.236s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/package.xml
+[0.236s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/libmap_loader_component.so
+[0.236s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/libbehavior_component.so
+[0.236s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/libcontroller_component.so
+[0.237s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/lib/libplanner_component.so
+[0.237s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_map_loader_componentExport.cmake
+[0.237s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_map_loader_componentExport-noconfig.cmake
+[0.238s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_behavior_componentExport.cmake
+[0.238s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_behavior_componentExport-noconfig.cmake
+[0.238s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_controller_componentExport.cmake
+[0.239s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_controller_componentExport-noconfig.cmake
+[0.239s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_planner_componentExport.cmake
+[0.239s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_planner_componentExport-noconfig.cmake
+[0.243s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_turtle2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308-proj2/build/ee4308_turtle2

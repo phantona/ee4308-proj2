@@ -1,0 +1,51 @@
+[0.030s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_drone -- -j16 -l16
+[0.156s] [ 50%] Built target behavior
+[0.156s] [ 50%] Built target controller
+[0.157s] [ 50%] Built target estimator
+[0.157s] [ 50%] Built target controller_component
+[0.158s] [ 62%] Built target behavior_component
+[0.158s] [ 68%] [32mBuilding CXX object CMakeFiles/estimator_component.dir/src/estimator.cpp.o[0m
+[0.158s] [ 81%] Built target planner
+[0.158s] [ 93%] Built target planner_component
+[24.167s] [100%] [32m[1mLinking CXX shared library libestimator_component.so[0m
+[25.081s] [100%] Built target estimator_component
+[25.093s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_drone -- -j16 -l16
+[25.095s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308-proj2/build/ee4308_drone
+[25.103s] -- Install configuration: ""
+[25.103s] -- Execute custom install script
+[25.104s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/behavior
+[25.104s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/controller
+[25.104s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/estimator
+[25.105s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/planner
+[25.105s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/package_run_dependencies/ee4308_drone
+[25.105s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/parent_prefix_path/ee4308_drone
+[25.105s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/ament_prefix_path.sh
+[25.105s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/ament_prefix_path.dsv
+[25.106s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/path.sh
+[25.106s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/path.dsv
+[25.106s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.bash
+[25.106s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.sh
+[25.106s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.zsh
+[25.107s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.dsv
+[25.107s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/package.dsv
+[25.117s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/packages/ee4308_drone
+[25.117s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/rclcpp_components/ee4308_drone
+[25.117s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ament_cmake_export_targets-extras.cmake
+[25.117s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.117s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ee4308_droneConfig.cmake
+[25.118s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ee4308_droneConfig-version.cmake
+[25.118s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/package.xml
+[25.118s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libbehavior_component.so
+[25.118s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libcontroller_component.so
+[25.119s] -- Installing: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libestimator_component.so
+[25.146s] -- Set non-toolchain portion of runtime path of "/home/phantona/ee4308-proj2/install/ee4308_drone/lib/libestimator_component.so" to ""
+[25.147s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libplanner_component.so
+[25.147s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_behavior_componentExport.cmake
+[25.147s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_behavior_componentExport-noconfig.cmake
+[25.147s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_controller_componentExport.cmake
+[25.147s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_controller_componentExport-noconfig.cmake
+[25.147s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_estimator_componentExport.cmake
+[25.148s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_estimator_componentExport-noconfig.cmake
+[25.148s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_planner_componentExport.cmake
+[25.148s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_planner_componentExport-noconfig.cmake
+[25.151s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308-proj2/build/ee4308_drone

@@ -1,0 +1,44 @@
+[ 50%] Built target behavior
+[ 62%] Built target estimator_component
+[ 87%] Built target estimator
+[ 87%] Built target planner
+[ 50%] Built target controller
+[ 50%] Built target behavior_component
+[ 50%] Built target controller_component
+[100%] Built target planner_component
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/behavior
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/controller
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/estimator
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/planner
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/package_run_dependencies/ee4308_drone
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/parent_prefix_path/ee4308_drone
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/path.sh
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/path.dsv
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.bash
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.sh
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.zsh
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.dsv
+-- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/package.dsv
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/packages/ee4308_drone
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/rclcpp_components/ee4308_drone
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ee4308_droneConfig.cmake
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ee4308_droneConfig-version.cmake
+-- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/package.xml
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libbehavior_component.so
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libcontroller_component.so
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libestimator_component.so
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libplanner_component.so
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_behavior_componentExport.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_behavior_componentExport-noconfig.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_controller_componentExport.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_controller_componentExport-noconfig.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_estimator_componentExport.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_estimator_componentExport-noconfig.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_planner_componentExport.cmake
+-- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_planner_componentExport-noconfig.cmake

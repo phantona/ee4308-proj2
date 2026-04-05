@@ -265,6 +265,7 @@ namespace ee4308::drone
 
         // 5. Update State and Covariance
         Xa_ = Xa_ + K * innovation;
+        Xa_(0) = ee4308::limitAngle(Xa_(0)); //JW edited here
         Pa_ = (Eigen::Matrix2d::Identity() - K * Ha) * Pa_;
     }
 
@@ -359,6 +360,7 @@ namespace ee4308::drone
         Xx_ = F * Xx_ + W * ax;
         Xy_ = F * Xy_ + W * ay;
         Xa_ = F * Xa_ + W * omega_z;
+        Xa_(0) = ee4308::limitAngle(Xa_(0)); //JW edited here
 
         // NEW 3D update for Z
         Xz_ = Fz * Xz_ + Wz * az;

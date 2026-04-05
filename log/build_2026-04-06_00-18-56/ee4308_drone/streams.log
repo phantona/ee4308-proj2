@@ -1,0 +1,13 @@
+[0.030s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_drone -- -j16 -l16
+[0.161s] [ 18%] Built target behavior
+[0.161s] [ 25%] Built target behavior_component
+[0.161s] [ 37%] Built target estimator
+[0.165s] [ 50%] Built target planner
+[0.169s] [ 56%] [32mBuilding CXX object CMakeFiles/estimator_component.dir/src/estimator.cpp.o[0m
+[0.178s] [ 68%] Built target controller
+[0.179s] [ 81%] Built target planner_component
+[0.181s] [ 93%] Built target controller_component
+[5.879s] gmake[2]: *** [CMakeFiles/estimator_component.dir/build.make:76: CMakeFiles/estimator_component.dir/src/estimator.cpp.o] Interrupt
+[5.879s] gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/estimator_component.dir/all] Interrupt
+[5.880s] gmake: *** [Makefile:146: all] Interrupt
+[5.944s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_drone' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_drone -- -j16 -l16

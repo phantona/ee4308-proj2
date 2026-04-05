@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/estimator_component.dir/build.make:76: CMakeFiles/estimator_component.dir/src/estimator.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/estimator_component.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

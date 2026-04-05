@@ -65,7 +65,10 @@ namespace ee4308::drone
         // odom_
         // waypoint_x_, waypoint_y_, waypoint_z_
         // ==== ====
-
+        if (state_ == TURTLE_POSITION) {
+            updateTurtleChaseWaypoint_();
+        }
+        
         if (reachedWaypoint_())  // change the 1: if (reached waypoint)
         {
             if (state_ == TAKEOFF)
@@ -192,6 +195,14 @@ namespace ee4308::drone
 
         double dist = std::sqrt(dx*dx + dy*dy + dz*dz);
         return dist <= reached_thres_;
+    }
+
+    void Behavior::updateTurtleChaseWaypoint_() {
+        if (!turtle_plan_.poses.empty()) {
+            waypoint_x_ = turtle_plan_.poses.front().pose.position.x;
+            waypoint_y_ = turtle_plan_.poses.front().pose.position.y;
+            waypoint_z_ = initial_z_ + cruise_height_;
+        }
     }
 
     void Behavior::requestPlan_(double drone_x, double drone_y, double drone_z,

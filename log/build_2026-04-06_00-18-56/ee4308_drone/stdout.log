@@ -1,0 +1,8 @@
+[ 18%] Built target behavior
+[ 25%] Built target behavior_component
+[ 37%] Built target estimator
+[ 50%] Built target planner
+[ 56%] [32mBuilding CXX object CMakeFiles/estimator_component.dir/src/estimator.cpp.o[0m
+[ 68%] Built target controller
+[ 81%] Built target planner_component
+[ 93%] Built target controller_component

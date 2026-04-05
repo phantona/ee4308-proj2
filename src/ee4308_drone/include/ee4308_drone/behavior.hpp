@@ -86,6 +86,8 @@ namespace ee4308::drone
         void requestPlan_(double drone_x, double drone_y, double drone_z,
                           double waypoint_x, double waypoint_y, double waypoint_z);
 
+        void updateTurtleChaseWaypoint_();
+
         void callbackCliReceivePlan_(const rclcpp::Client<nav_msgs::srv::GetPlan>::SharedFuture future);
     };
 }
