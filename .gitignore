@@ -16,3 +16,7 @@ __pycache__/
 # --- OS specific ---
 .DS_Store
 Thumbs.db
+
+**/CMakeCache
+
+**/Backup Cont.cpp
