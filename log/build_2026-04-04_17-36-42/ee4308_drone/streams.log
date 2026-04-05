@@ -1,0 +1,48 @@
+[0.027s] Invoking command in '/home/phantona/ee4308L2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308L2/build/ee4308_drone -- -j16 -l16
+[0.040s] [0mCMake Error: The current CMakeCache.txt directory /home/phantona/ee4308L2/build/ee4308_drone/CMakeCache.txt is different than the directory /home/phantona/ee4308/build/ee4308_drone where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.083s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.451s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.473s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.552s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.569s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.594s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.621s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.743s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.747s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.871s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.999s] -- Found rclcpp_components: 28.1.16 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.049s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.073s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.148s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.199s] -- Found tf2: 0.36.19 (/opt/ros/jazzy/share/tf2/cmake)
+[1.213s] -- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.364s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.547s] -- Configuring done (1.5s)
+[1.630s] -- Generating done (0.1s)
+[1.653s] -- Build files have been written to: /home/phantona/ee4308/build/ee4308_drone
+[1.769s] [ 25%] [32mBuilding CXX object CMakeFiles/behavior_component.dir/src/behavior.cpp.o[0m
+[1.769s] [ 31%] [32mBuilding CXX object CMakeFiles/planner_component.dir/src/planner.cpp.o[0m
+[1.770s] [ 43%] [32mBuilding CXX object CMakeFiles/behavior.dir/rclcpp_components/node_main_behavior.cpp.o[0m
+[1.770s] [ 25%] [32mBuilding CXX object CMakeFiles/planner.dir/rclcpp_components/node_main_planner.cpp.o[0m
+[1.770s] [ 25%] [32mBuilding CXX object CMakeFiles/estimator.dir/rclcpp_components/node_main_estimator.cpp.o[0m
+[1.770s] [ 43%] [32mBuilding CXX object CMakeFiles/controller.dir/rclcpp_components/node_main_controller.cpp.o[0m
+[1.770s] [ 43%] [32mBuilding CXX object CMakeFiles/controller_component.dir/src/controller.cpp.o[0m
+[1.782s] [ 50%] [32mBuilding CXX object CMakeFiles/estimator_component.dir/src/estimator.cpp.o[0m
+[10.956s] [ 56%] [32m[1mLinking CXX executable estimator[0m
+[11.032s] [ 68%] [32m[1mLinking CXX executable behavior[0m
+[11.032s] [ 68%] [32m[1mLinking CXX executable controller[0m
+[11.342s] [ 75%] [32m[1mLinking CXX executable planner[0m
+[11.429s] [ 75%] Built target estimator
+[11.476s] [ 75%] Built target controller
+[11.510s] [ 75%] Built target behavior
+[11.732s] [ 75%] Built target planner
+[14.904s] [ 81%] [32m[1mLinking CXX shared library libplanner_component.so[0m
+[15.285s] [ 81%] Built target planner_component
+[22.064s] [ 87%] [32m[1mLinking CXX shared library libcontroller_component.so[0m
+[22.669s] [ 87%] Built target controller_component
+[25.900s] [ 93%] [32m[1mLinking CXX shared library libbehavior_component.so[0m
+[26.516s] [ 93%] Built target behavior_component
+[29.549s] gmake[2]: *** [CMakeFiles/estimator_component.dir/build.make:76: CMakeFiles/estimator_component.dir/src/estimator.cpp.o] Interrupt
+[29.550s] gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/estimator_component.dir/all] Interrupt
+[29.551s] gmake: *** [Makefile:146: all] Interrupt
+[29.715s] Invoked command in '/home/phantona/ee4308L2/build/ee4308_drone' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308L2/build/ee4308_drone -- -j16 -l16

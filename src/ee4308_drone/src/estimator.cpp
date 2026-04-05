@@ -48,11 +48,11 @@ namespace ee4308::drone
         this->initial_position_ << initial_x, initial_y, initial_z;
         this->Xx_ << initial_x, 0;
         this->Xy_ << initial_y, 0;
-        this->Xz_ << initial_z, 0;
+        this->Xz_ << initial_z, 0, 0; // Altitude, Velocity, Bias (initially 0)
         this->Xa_ << 0, 0;
         this->Px_ = Eigen::Matrix2d::Constant(1e3),
         this->Py_ = Eigen::Matrix2d::Constant(1e3),
-        this->Pz_ = Eigen::Matrix2d::Constant(1e3);
+        this->Pz_ = Eigen::Matrix3d::Identity() * 1e3; // this is 3x3 now
         this->Pa_ = Eigen::Matrix2d::Constant(1e3);
         this->initial_ECEF_ << NAN, NAN, NAN;
         this->Ygps_ << NAN, NAN, NAN;
@@ -76,21 +76,25 @@ namespace ee4308::drone
         const double &alt)
     {
         Eigen::Vector3d ECEF;
-        // ==== make use of ====
-        // RAD_POLAR, RAD_EQUATOR
-        // std::sqrt()
-        // all the function arguments.
-        // =========
 
-        // rewrite or delete the following
-        (void) (sin_lat * cos_lat * sin_lon * cos_lon * alt);
+        // 1. Calculate the square of the first numerical eccentricity
+        double a = RAD_EQUATOR;
+        double b = RAD_POLAR;
+        double e_sq = 1.0 - (b * b) / (a * a);
+
+        // 2. Calculate the prime vertical radius of curvature
+        double N = a / std::sqrt(1.0 - e_sq * sin_lat * sin_lat);
+
+        // 3. Calculate ECEF coordinates
+        ECEF(0) = (N + alt) * cos_lat * cos_lon; // x_e
+        ECEF(1) = (N + alt) * cos_lat * sin_lon; // y_e
+        ECEF(2) = ((b * b) / (a * a) * N + alt) * sin_lat; // z_e
 
         return ECEF;
     }
 
     void Estimator::callbackSubGPS_(const sensor_msgs::msg::NavSatFix msg)
     { // avoiding const & due to possibly long calcs.
-        (void)msg;
 
         constexpr double DEG2RAD = M_PI / 180;
         double lat = msg.latitude * DEG2RAD;  
@@ -105,32 +109,69 @@ namespace ee4308::drone
         if (initialized_ecef_ == false)
         {
             initial_ECEF_ = getECEF_(sin_lat, cos_lat, sin_lon, cos_lon, alt);
+            // Save these for the rotation matrix
+            init_sin_lat_ = sin_lat;
+            init_cos_lat_ = cos_lat;
+            init_sin_lon_ = sin_lon;
+            init_cos_lon_ = cos_lon;
+
             initialized_ecef_ = true;
             return;
         }
 
+        // 1. Get current ECEF
         Eigen::Vector3d ECEF = getECEF_(sin_lat, cos_lat, sin_lon, cos_lon, alt);
 
-        // After obtaining NED, and *rotating* to Gazebo's world frame,
-        //      Store the measured x,y,z, in Ygps_.
-        //      Required for terminal printing during demonstration.
-        // The Gazebo world frame is in ENU instead of NED convention.
-        // ==== make use of ====
-        // Ygps_
-        // initial_position_
-        // initial_ECEF_
-        // sin_lat, cost_lat, sin_lon, cos_lon, alt
-        // var_gps_x_, var_gps_y_, var_gps_z_
-        // Px_, Py_, Pz_
-        // Xx_, Xy_, Xz_
-        //
-        // - other Eigen methods like .transpose().
-        // - Possible to divide a VectorXd element-wise by a double by using the divide operator '/'.
-        // - Matrix multiplication using the times operator '*'.
-        // =========
+        // 2. Build Rotation Matrix Re/n (ECEF to NED)
+        Eigen::Matrix3d Re_n;
+        Re_n << -init_sin_lat_ * init_cos_lon_, -init_sin_lon_, -init_cos_lat_ * init_cos_lon_,
+                -init_sin_lat_ * init_sin_lon_,  init_cos_lon_, -init_cos_lat_ * init_sin_lon_,
+                init_cos_lat_,                  0,              -init_sin_lat_;
 
-        // rewrite or delete the following
-        (void) ECEF;
+        // 3. Convert to NED frame
+        // The formula is: NED = Re/n.transpose() * (Current_ECEF - Initial_ECEF)
+        Eigen::Vector3d NED = Re_n.transpose() * (ECEF - initial_ECEF_);
+
+        // 4. Convert NED to World Frame (ENU)
+        Eigen::Matrix3d Rm_n;
+        Rm_n << 0, 1,  0,  // Map X = NED East
+                1, 0,  0,  // Map Y = NED North
+                0, 0, -1;  // Map Z = -NED Down (Up)
+
+        // Final GPS measurement in the World Frame
+        Ygps_ = Rm_n * NED + initial_position_;
+
+        // --- KALMAN CORRECTION ---
+        // 1. Observation Matrix for X and Y (2D states)
+        Eigen::RowVector2d H;
+        H << 1, 0;
+
+        // Update X (2D state)
+        double inno_x = Ygps_(0) - (H * Xx_)(0);
+        double S_x = (H * Px_ * H.transpose())(0) + var_gps_x_;
+        Eigen::Vector2d K_x = Px_ * H.transpose() / S_x;
+        Xx_ = Xx_ + K_x * inno_x;
+        Px_ = (Eigen::Matrix2d::Identity() - K_x * H) * Px_;
+
+        // Update Y (2D state)
+        double inno_y = Ygps_(1) - (H * Xy_)(0);
+        double S_y = (H * Py_ * H.transpose())(0) + var_gps_y_;
+        Eigen::Vector2d K_y = Py_ * H.transpose() / S_y;
+        Xy_ = Xy_ + K_y * inno_y;
+        Py_ = (Eigen::Matrix2d::Identity() - K_y * H) * Py_;
+
+        // 2. Observation Matrix for Z (3D state for bias)
+        Eigen::RowVector3d Hz; 
+        Hz << 1, 0, 0; // GPS only sees altitude, not velocity or bias
+
+        // Update Z (3D state)
+        double inno_z = Ygps_(2) - (Hz * Xz_)(0);
+        // CRITICAL: Must use Hz (3D) here, not H (2D)!
+        double S_z = (Hz * Pz_ * Hz.transpose())(0) + var_gps_z_; 
+        Eigen::Vector3d K_z = Pz_ * Hz.transpose() / S_z; 
+
+        Xz_ = Xz_ + K_z * inno_z;
+        Pz_ = (Eigen::Matrix3d::Identity() - K_z * Hz) * Pz_; 
     }
 
     // ================================ Sonar sub callback / EKF Correction ========================================
@@ -152,8 +193,8 @@ namespace ee4308::drone
         // ==== [FOR LAB 2 ONLY] ==== 
         // The following is necessary so that the covariance bubble in RViz does not fill up the screen.
         // For proj 2, comment out the following:
-        Px_ << 0.1, 0, 0, 0.1;
-        Py_ << 0.1, 0, 0, 0.1;
+        //Px_ << 0.1, 0, 0, 0.1;
+        //Py_ << 0.1, 0, 0, 0.1;
         // =========
         
         if (!std::isfinite(Ysonar_))
@@ -164,68 +205,77 @@ namespace ee4308::drone
         }
 
         // if in range, write to Ysonar_, and do the KF correction.
-        Eigen::RowVector2d H;
-        H << 1.0, 0.0;
+        Eigen::RowVector3d H; // Note: RowVector3d
+        H << 1, 0, 0; // It only "sees" position, not velocity or baro_bias.  rest of the sonar math remains the same, Eigen will handle the 3×3 matrix math automatically now that Xz_ and Pz_ are resized.
         
         double R = var_sonar_;
 
-        //innovation and the innovation covariance
-        double inno = Ysonar_ - (H * Xz_)(0, 0);
-        double inno_covariance = (H * Pz_ * H.transpose())(0,0) + R;    //V is 1 here since R in frame lmao, like what Prof said in lecture
+        // 2. Innovation and Innovation Covariance
+        // Note: (0) extracts the scalar from the 1x1 matrix result
+        double inno = Ysonar_ - (H * Xz_)(0);
+        double inno_covariance = (H * Pz_ * H.transpose())(0) + R; 
 
-        //Kalman gain
-        Eigen::Vector2d K;
-        K = (Pz_ * H.transpose())/inno_covariance;
+        // 3. Kalman Gain (Now a 3x1 vector)
+        Eigen::Vector3d K = (Pz_ * H.transpose()) / inno_covariance;
 
-        //Corrections of Xz and Pz
+        // 4. Update State (Xz_) and Covariance (Pz_)
         Xz_ = Xz_ + K * inno;
-        Eigen::Matrix2d I = Eigen::Matrix2d::Identity();
+        Eigen::Matrix3d I = Eigen::Matrix3d::Identity(); // 3x3 Identity matrix
         Pz_ = (I - K * H) * Pz_;
     }
 
     // ================================ Magnetic sub callback / EKF Correction ========================================
     void Estimator::callbackSubMagnetic_(const sensor_msgs::msg::MagneticField msg)
     {
-        // Store the measured angle (world frame) in Ymagnet_.
-        //      Required for terminal printing during demonstration.
-        // Along the horizontal plane, the magnetic north in Gazebo points towards +x, when it should point to +y (even if world is configured to be ENU frame). It is a bug.
-        // As the drone always starts pointing towards +x, there is no need to offset the calculation with an initial heading.
-        // Magnetic force direction in drone's z-axis can be ignored.
-        // The units are in Gauss (by Gazebo) instead of in Tesla (MagneticField message documentation).
-        // ==== make use of ====
-        // Ymagnet_
-        // msg.magnetic_field.x // the magnetic force direction along drone's x-axis.
-        // msg.magnetic_field.y // the magnetic force direction along drone's y-axis.
-        // std::atan2()
-        // Xa_
-        // Pa_
-        // var_magnet_
-        // .transpose()
-        // limitAngle()
-        // =========
+        // 1. Calculate the measured yaw from magnetic field vectors
+        // Note: We use atan2(y, x) to get the angle in radians
+        Ymagnet_ = std::atan2(-msg.magnetic_field.y, msg.magnetic_field.x);
 
-        // rewrite or delete the following:
-        (void) msg;
+        // 2. Observation Model: Magnetometer observes Yaw (index 0)
+        Eigen::RowVector2d Ha;
+        Ha << 1, 0;
+        double R = var_magnet_;
+
+        // 3. Innovation (Measurement - Prediction)
+        // CRITICAL: We must limit the angle difference to [-PI, PI] or the filter will flip!
+        double innovation = ee4308::limitAngle(Ymagnet_ - Xa_(0));
+        double S = (Ha * Pa_ * Ha.transpose())(0) + R;
+
+        // 4. Kalman Gain
+        Eigen::Vector2d K = Pa_ * Ha.transpose() / S;
+
+        // 5. Update State and Covariance
+        Xa_ = Xa_ + K * innovation;
+        Pa_ = (Eigen::Matrix2d::Identity() - K * Ha) * Pa_;
     }
 
     // ================================ Baro sub callback / EKF Correction ========================================
     void Estimator::callbackSubBaro_(const sensor_msgs::msg::FluidPressure msg)
     {
-        // Store the measured barometer altitude in Ybaro_.
-        //      Required for terminal printing during demonstration.
-        // the fluid pressure is in pascal.
-        // ==== make use of ====
-        // Ybaro_ 
-        // SEA_LEVEL_PA
-        // msg.fluid_pressure
-        // var_baro_
-        // Pz_
-        // Xz_
-        // .transpose()
-        // =========
+        // 1. Convert Pressure (Pa) to Altitude (m)
+        // Using the WGS84 standard atmospheric model constant: 0.1903
+        Ybaro_ = 44330.0 * (1.0 - std::pow(msg.fluid_pressure / SEA_LEVEL_PA, 0.1903));
 
-        // rewrite or delete the following
-        (void) msg;
+        if (!std::isfinite(Ybaro_)) return;
+
+        // 2. Augmented Observation Model
+        Eigen::RowVector3d Hb;
+        Hb << 1.0, 0.0, 1.0; // Baro measurement = Altitude (1.0) + Bias (1.0)
+    
+        double R = var_baro_;
+
+        // 3. Innovation and Innovation Covariance
+        double inno = Ybaro_ - (Hb * Xz_)(0);
+        double S = (Hb * Pz_ * Hb.transpose())(0) + R;
+
+        // 4. Kalman Gain (3x1 vector)
+        Eigen::Vector3d K = (Pz_ * Hb.transpose()) / S;
+
+        // 5. Update State and Covariance
+        // This allows the filter to partition error into actual motion vs. sensor bias
+        Xz_ = Xz_ + K * inno;
+        Eigen::Matrix3d I = Eigen::Matrix3d::Identity();
+        Pz_ = (I - K * Hb) * Pz_;
     }
 
     // ================================ IMU sub callback / EKF Prediction ========================================
@@ -252,23 +302,57 @@ namespace ee4308::drone
         // std::cos(), std::sin()
         // =========
 
-        // rewrite or delete the following
-        //Declare the F and W matrices
+        // 1. Get current yaw and angular velocity
+        double psi = Xa_(0); 
+        double omega_z = msg.angular_velocity.z;
+
+        // 2. Rotate Body-Frame Accel to World-Frame Accel
+        double ux = msg.linear_acceleration.x;
+        double uy = msg.linear_acceleration.y;
+        double uz = msg.linear_acceleration.z;
+        double ax = ux * std::cos(psi) - uy * std::sin(psi);
+        double ay = ux * std::sin(psi) + uy * std::cos(psi);
+        double az = uz - GRAVITY;// Coordinate acceleration (subtracting g)
+
+        // 3. Define the Transition Matrices for X, Y, and Yaw (2-state)
         Eigen::Matrix2d F;
-        F << 1.0, dt, 
-             0.0, 1.0;
+        F << 1, dt,
+             0, 1;
 
         Eigen::Vector2d W;
-        W << 0.5*dt*dt,
+        W << 0.5 * dt * dt,
              dt;
-        
-        //Calculate acceleration in the z direction
-        double az = msg.linear_acceleration.z - GRAVITY;     // change to -GRAVITY if not right
 
-        //Prediction of state using lab equation
-        Xz_ = F * Xz_ + W * az;
-        Pz_ = F * Pz_ * F.transpose() + (W * W.transpose()) * var_imu_z_; //Q, the noise covariance, is a scalar here
-        //(void) msg;
+        // 3b. Define the Transition Matrices for Z (3-state)
+        Eigen::Matrix3d Fz;
+        Fz << 1, dt, 0,
+              0, 1,  0,
+              0, 0,  1; // The bias is assumed constant in prediction
+
+        Eigen::Vector3d Wz;
+        Wz << 0.5 * dt * dt,
+              dt,
+              0; // Acceleration does not directly affect barometer bias
+
+        // --- PREDICTION UPDATES ---
+        
+        // standard 2D updates for X, Y, and Yaw
+        Xx_ = F * Xx_ + W * ax;
+        Xy_ = F * Xy_ + W * ay;
+        Xa_ = F * Xa_ + W * omega_z;
+
+        // NEW 3D update for Z
+        Xz_ = Fz * Xz_ + Wz * az;
+
+        // --- COVARIANCE UPDATES (P = FPF' + WQW') ---
+        
+        // standard 2D covariance updates
+        Px_ = F * Px_ * F.transpose() + W * var_imu_x_ * W.transpose();
+        Py_ = F * Py_ * F.transpose() + W * var_imu_y_ * W.transpose();
+        Pa_ = F * Pa_ * F.transpose() + W * var_imu_a_ * W.transpose();
+
+        // NEW 3D covariance update for Z
+        Pz_ = Fz * Pz_ * Fz.transpose() + Wz * var_imu_z_ * Wz.transpose();
     }
 
     void Estimator::callbackSubTrueOdom_(const nav_msgs::msg::Odometry msg)
@@ -287,6 +371,7 @@ namespace ee4308::drone
             {
                 double t = this->now().seconds();
                 std::stringstream ss;
+                ss << "BaroBias: " << Xz_(2) << std::endl;  //want to see the Bias value in terminal for report
                 ss << std::fixed;
                 ss << "\t"
                    << std::setw(7) << std::setprecision(3) << t << "\t"

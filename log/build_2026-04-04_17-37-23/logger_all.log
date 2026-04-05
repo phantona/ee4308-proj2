@@ -1,0 +1,303 @@
+[0.214s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.214s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73e2d277fda0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73e2d277fb00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73e2d277fb00>>, mixin_verb=('build',))
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.303s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/phantona/ee4308L2'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'ros'
+[0.353s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ee4308_bringup' with type 'ros.ament_cmake' and name 'ee4308_bringup'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_drone) by extension 'ros'
+[0.355s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ee4308_drone' with type 'ros.ament_cmake' and name 'ee4308_drone'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extensions ['colcon_pkg']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle2) by extension 'ros'
+[0.357s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ee4308_turtle2' with type 'ros.ament_cmake' and name 'ee4308_turtle2'
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.396s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/phantona/ee4308-proj2/install
+[0.400s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 394 installed packages in /opt/ros/jazzy
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_args' from command line to 'None'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_target' from command line to 'None'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.486s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.487s] DEBUG:colcon.colcon_core.verb:Building package 'ee4308_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/phantona/ee4308L2/build/ee4308_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/phantona/ee4308L2/install/ee4308_bringup', 'merge_install': False, 'path': '/home/phantona/ee4308L2/src/ee4308_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'cmake_target' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'cmake_clean_cache' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'cmake_clean_first' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'cmake_force_configure' from command line to 'False'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'ament_cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'catkin_cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'ee4308_drone' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.487s] DEBUG:colcon.colcon_core.verb:Building package 'ee4308_drone' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/phantona/ee4308L2/build/ee4308_drone', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/phantona/ee4308L2/install/ee4308_drone', 'merge_install': False, 'path': '/home/phantona/ee4308L2/src/ee4308_drone', 'symlink_install': True, 'test_result_base': None}
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'cmake_target' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'cmake_clean_first' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'cmake_force_configure' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'ament_cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.488s] DEBUG:colcon.colcon_core.verb:Building package 'ee4308_turtle2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/phantona/ee4308L2/build/ee4308_turtle2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/phantona/ee4308L2/install/ee4308_turtle2', 'merge_install': False, 'path': '/home/phantona/ee4308L2/src/ee4308_turtle2', 'symlink_install': True, 'test_result_base': None}
+[0.488s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.491s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.491s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/phantona/ee4308L2/src/ee4308_bringup' with build type 'ament_cmake'
+[0.491s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/phantona/ee4308L2/src/ee4308_bringup'
+[0.496s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.496s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.497s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.504s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/phantona/ee4308L2/src/ee4308_drone' with build type 'ament_cmake'
+[0.504s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/phantona/ee4308L2/src/ee4308_drone'
+[0.505s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.505s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.511s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/phantona/ee4308L2/src/ee4308_turtle2' with build type 'ament_cmake'
+[0.512s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/phantona/ee4308L2/src/ee4308_turtle2'
+[0.512s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.512s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.526s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308L2/src/ee4308_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_bringup
+[0.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308L2/src/ee4308_drone -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_drone
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_turtle2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308L2/src/ee4308_turtle2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_turtle2
+[1.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308L2/src/ee4308_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_bringup
+[1.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308L2/build/ee4308_bringup -- -j16 -l16
+[2.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308L2/build/ee4308_bringup -- -j16 -l16
+[2.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308L2/build/ee4308_bringup
+[2.912s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_bringup)
+[2.913s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308L2/build/ee4308_bringup
+[2.919s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup' for CMake module files
+[2.920s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup' for CMake config files
+[2.921s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_bringup', 'cmake_prefix_path')
+[2.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.ps1'
+[2.922s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.dsv'
+[2.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.sh'
+[2.924s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup/bin'
+[2.924s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup/lib/pkgconfig/ee4308_bringup.pc'
+[2.924s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup/lib/python3.12/site-packages'
+[2.925s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup/bin'
+[2.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.ps1'
+[2.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.dsv'
+[2.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.sh'
+[2.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.bash'
+[2.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.zsh'
+[2.930s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/phantona/ee4308L2/install/ee4308_bringup/share/colcon-core/packages/ee4308_bringup)
+[2.931s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_bringup)
+[2.931s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup' for CMake module files
+[2.932s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup' for CMake config files
+[2.933s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_bringup', 'cmake_prefix_path')
+[2.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.ps1'
+[2.934s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.dsv'
+[2.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.sh'
+[2.935s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup/bin'
+[2.935s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup/lib/pkgconfig/ee4308_bringup.pc'
+[2.935s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup/lib/python3.12/site-packages'
+[2.936s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_bringup/bin'
+[2.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.ps1'
+[2.937s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.dsv'
+[2.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.sh'
+[2.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.bash'
+[2.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.zsh'
+[2.940s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/phantona/ee4308L2/install/ee4308_bringup/share/colcon-core/packages/ee4308_bringup)
+[3.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_turtle2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308L2/src/ee4308_turtle2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_turtle2
+[3.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_turtle2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308L2/build/ee4308_turtle2 -- -j16 -l16
+[3.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308L2/src/ee4308_drone -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_drone
+[3.412s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308L2/build/ee4308_drone -- -j16 -l16
+[18.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_turtle2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308L2/build/ee4308_turtle2 -- -j16 -l16
+[18.329s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_turtle2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308L2/build/ee4308_turtle2
+[18.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_turtle2)
+[18.656s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2' for CMake module files
+[18.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_turtle2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308L2/build/ee4308_turtle2
+[18.658s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2' for CMake config files
+[18.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_turtle2', 'cmake_prefix_path')
+[18.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/cmake_prefix_path.ps1'
+[18.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/cmake_prefix_path.dsv'
+[18.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/cmake_prefix_path.sh'
+[18.660s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/lib'
+[18.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_turtle2', 'ld_library_path_lib')
+[18.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/ld_library_path_lib.ps1'
+[18.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/ld_library_path_lib.dsv'
+[18.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/ld_library_path_lib.sh'
+[18.662s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/bin'
+[18.662s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/lib/pkgconfig/ee4308_turtle2.pc'
+[18.663s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/lib/python3.12/site-packages'
+[18.663s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/bin'
+[18.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.ps1'
+[18.664s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.dsv'
+[18.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.sh'
+[18.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.bash'
+[18.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.zsh'
+[18.666s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/phantona/ee4308L2/install/ee4308_turtle2/share/colcon-core/packages/ee4308_turtle2)
+[18.666s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_turtle2)
+[18.666s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2' for CMake module files
+[18.667s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2' for CMake config files
+[18.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_turtle2', 'cmake_prefix_path')
+[18.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/cmake_prefix_path.ps1'
+[18.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/cmake_prefix_path.dsv'
+[18.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/cmake_prefix_path.sh'
+[18.670s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/lib'
+[18.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_turtle2', 'ld_library_path_lib')
+[18.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/ld_library_path_lib.ps1'
+[18.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/ld_library_path_lib.dsv'
+[18.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/hook/ld_library_path_lib.sh'
+[18.671s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/bin'
+[18.672s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/lib/pkgconfig/ee4308_turtle2.pc'
+[18.672s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/lib/python3.12/site-packages'
+[18.672s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_turtle2/bin'
+[18.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.ps1'
+[18.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.dsv'
+[18.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.sh'
+[18.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.bash'
+[18.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.zsh'
+[18.676s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/phantona/ee4308L2/install/ee4308_turtle2/share/colcon-core/packages/ee4308_turtle2)
+[29.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308L2/build/ee4308_drone -- -j16 -l16
+[29.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/phantona/ee4308L2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308L2/build/ee4308_drone
+[30.143s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_drone)
+[30.143s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone' for CMake module files
+[30.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/phantona/ee4308L2/build/ee4308_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308L2/build/ee4308_drone
+[30.144s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone' for CMake config files
+[30.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_drone', 'cmake_prefix_path')
+[30.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/cmake_prefix_path.ps1'
+[30.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/cmake_prefix_path.dsv'
+[30.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/cmake_prefix_path.sh'
+[30.146s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/lib'
+[30.146s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_drone', 'ld_library_path_lib')
+[30.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/ld_library_path_lib.ps1'
+[30.146s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/ld_library_path_lib.dsv'
+[30.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/ld_library_path_lib.sh'
+[30.147s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/bin'
+[30.147s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/lib/pkgconfig/ee4308_drone.pc'
+[30.147s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/lib/python3.12/site-packages'
+[30.148s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/bin'
+[30.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.ps1'
+[30.148s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.dsv'
+[30.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.sh'
+[30.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.bash'
+[30.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.zsh'
+[30.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/phantona/ee4308L2/install/ee4308_drone/share/colcon-core/packages/ee4308_drone)
+[30.150s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_drone)
+[30.150s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone' for CMake module files
+[30.151s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone' for CMake config files
+[30.151s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_drone', 'cmake_prefix_path')
+[30.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/cmake_prefix_path.ps1'
+[30.151s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/cmake_prefix_path.dsv'
+[30.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/cmake_prefix_path.sh'
+[30.152s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/lib'
+[30.152s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_drone', 'ld_library_path_lib')
+[30.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/ld_library_path_lib.ps1'
+[30.152s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/ld_library_path_lib.dsv'
+[30.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/hook/ld_library_path_lib.sh'
+[30.153s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/bin'
+[30.153s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/lib/pkgconfig/ee4308_drone.pc'
+[30.153s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/lib/python3.12/site-packages'
+[30.154s] Level 1:colcon.colcon_core.environment:checking '/home/phantona/ee4308L2/install/ee4308_drone/bin'
+[30.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.ps1'
+[30.154s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.dsv'
+[30.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.sh'
+[30.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.bash'
+[30.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.zsh'
+[30.156s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/phantona/ee4308L2/install/ee4308_drone/share/colcon-core/packages/ee4308_drone)
+[30.156s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[30.156s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[30.156s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[30.157s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[30.163s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[30.163s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[30.163s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[30.177s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[30.178s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/phantona/ee4308L2/install/local_setup.ps1'
+[30.179s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/phantona/ee4308L2/install/_local_setup_util_ps1.py'
+[30.180s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/phantona/ee4308L2/install/setup.ps1'
+[30.182s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/phantona/ee4308L2/install/local_setup.sh'
+[30.183s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/phantona/ee4308L2/install/_local_setup_util_sh.py'
+[30.183s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/phantona/ee4308L2/install/setup.sh'
+[30.184s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/phantona/ee4308L2/install/local_setup.bash'
+[30.185s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/phantona/ee4308L2/install/setup.bash'
+[30.186s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/phantona/ee4308L2/install/local_setup.zsh'
+[30.186s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/phantona/ee4308L2/install/setup.zsh'

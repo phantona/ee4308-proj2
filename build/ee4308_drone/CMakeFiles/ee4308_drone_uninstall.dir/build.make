@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/phantona/ee4308-proj2/src/ee4308_drone
+CMAKE_SOURCE_DIR = /home/phantona/ee4308L2/src/ee4308_drone
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/phantona/ee4308-proj2/build/ee4308_drone
+CMAKE_BINARY_DIR = /home/phantona/ee4308L2/build/ee4308_drone
 
 # Utility rule file for ee4308_drone_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ee4308_drone_uninstall.dir/compiler_depend.make
 include CMakeFiles/ee4308_drone_uninstall.dir/progress.make
 
 CMakeFiles/ee4308_drone_uninstall:
-	/usr/bin/cmake -P /home/phantona/ee4308-proj2/build/ee4308_drone/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/phantona/ee4308L2/build/ee4308_drone/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ee4308_drone_uninstall: CMakeFiles/ee4308_drone_uninstall
 ee4308_drone_uninstall: CMakeFiles/ee4308_drone_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ee4308_drone_uninstall.dir/clean:
 .PHONY : CMakeFiles/ee4308_drone_uninstall.dir/clean
 
 CMakeFiles/ee4308_drone_uninstall.dir/depend:
-	cd /home/phantona/ee4308-proj2/build/ee4308_drone && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/phantona/ee4308-proj2/src/ee4308_drone /home/phantona/ee4308-proj2/src/ee4308_drone /home/phantona/ee4308-proj2/build/ee4308_drone /home/phantona/ee4308-proj2/build/ee4308_drone /home/phantona/ee4308-proj2/build/ee4308_drone/CMakeFiles/ee4308_drone_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/phantona/ee4308L2/build/ee4308_drone && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/phantona/ee4308L2/src/ee4308_drone /home/phantona/ee4308L2/src/ee4308_drone /home/phantona/ee4308L2/build/ee4308_drone /home/phantona/ee4308L2/build/ee4308_drone /home/phantona/ee4308L2/build/ee4308_drone/CMakeFiles/ee4308_drone_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ee4308_drone_uninstall.dir/depend
 

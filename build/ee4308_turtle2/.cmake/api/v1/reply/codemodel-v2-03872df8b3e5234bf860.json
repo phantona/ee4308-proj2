@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d1442908e8799b57c26c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ee4308_turtle2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "behavior::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-behavior-0c0fca3e297939aaa9e5.json",
+					"name" : "behavior",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "behavior_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-behavior_component-7c7828f57a1e589e6806.json",
+					"name" : "behavior_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller-7ceb44a685f9381e713f.json",
+					"name" : "controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller_component-d94ead180528297b8c43.json",
+					"name" : "controller_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ee4308_turtle2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ee4308_turtle2_uninstall-580acc0e95c19ef0e776.json",
+					"name" : "ee4308_turtle2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_loader::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_loader-cb7a94343e38c943da7c.json",
+					"name" : "map_loader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_loader_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_loader_component-11c2adf8c9a8df85a437.json",
+					"name" : "map_loader_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-planner-911b60a8a1e4bb58e56b.json",
+					"name" : "planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "planner_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-planner_component-5c7425a9d0459f996afa.json",
+					"name" : "planner_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f9c49f3aefa21597f414.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/phantona/ee4308L2/build/ee4308_turtle2",
+		"source" : "/home/phantona/ee4308L2/src/ee4308_turtle2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

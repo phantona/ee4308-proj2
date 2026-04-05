@@ -39,12 +39,12 @@ namespace ee4308::drone
         nav_msgs::msg::Odometry true_odom_; // ground truth
         Eigen::Vector2d Xx_;
         Eigen::Vector2d Xy_;
-        Eigen::Vector2d Xz_;
+        Eigen::Vector3d Xz_; // changed from Vector2d to Vector3d
         Eigen::Vector2d Xa_;
         Eigen::Matrix2d Px_;
         Eigen::Matrix2d Py_;
         Eigen::Matrix2d Pa_;
-        Eigen::Matrix2d Pz_;
+        Eigen::Matrix3d Pz_; // changed from Matric2d to Matrix3d
         Eigen::Vector3d initial_ECEF_;
         Eigen::Vector3d initial_position_;
         Eigen::Vector3d Ygps_;
@@ -54,6 +54,10 @@ namespace ee4308::drone
         double last_predict_time_;
         bool initialized_ecef_;
         bool initialized_magnetic_;
+        double init_sin_lat_;
+        double init_cos_lat_;
+        double init_sin_lon_;
+        double init_cos_lon_;
 
         // Parameters
         std::string frame_id_map_;

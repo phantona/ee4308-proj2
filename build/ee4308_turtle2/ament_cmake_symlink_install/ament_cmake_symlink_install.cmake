@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/phantona/ee4308-proj2/install/ee4308_turtle2/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/phantona/ee4308L2/install/ee4308_turtle2/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/phantona/ee4308-proj2/install/ee4308_turtle2/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/phantona/ee4308L2/install/ee4308_turtle2/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/phantona/ee4308-proj2/install/ee4308_turtle2/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/phantona/ee4308L2/install/ee4308_turtle2/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/phantona/ee4308-proj2/install/ee4308_turtle2/${destination}")
+      set(destination "/home/phantona/ee4308L2/install/ee4308_turtle2/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,61 +316,61 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "map_loader" "DESTINATION" "lib/ee4308_turtle2")
-include("/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "behavior" "DESTINATION" "lib/ee4308_turtle2")
-include("/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "controller" "DESTINATION" "lib/ee4308_turtle2")
-include("/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "planner" "DESTINATION" "lib/ee4308_turtle2")
-include("/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ee4308_turtle2/environment")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ee4308_turtle2/environment")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ee4308_turtle2/environment")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ee4308_turtle2/environment")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ee4308_turtle2/environment")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ee4308_turtle2/environment")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ee4308_turtle2/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ee4308_turtle2/environment")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ee4308_turtle2/environment")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ee4308_turtle2/environment")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ee4308_turtle2/environment")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ee4308_turtle2/environment")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ee4308_turtle2/environment")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ee4308_turtle2/environment")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ee4308_turtle2")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ee4308_turtle2")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ee4308_turtle2")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ee4308_turtle2")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ee4308_turtle2")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ee4308_turtle2")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ee4308_turtle2")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ee4308_turtle2")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ee4308_turtle2")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ee4308_turtle2")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ee4308_turtle2")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ee4308_turtle2")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ee4308_turtle2")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ee4308_turtle2")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ee4308_turtle2")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ee4308_turtle2")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ee4308_turtle2")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ee4308_turtle2")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ee4308_turtle2")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ee4308_turtle2")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/packages/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/packages/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/packages/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/packages/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/ee4308_turtle2" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/ee4308_turtle2/cmake")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/ee4308_turtle2/cmake")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/ee4308_turtle2/cmake")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/ee4308_turtle2/cmake")
 
-# install(FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_core/ee4308_turtle2Config.cmake" "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_core/ee4308_turtle2Config-version.cmake" "DESTINATION" "share/ee4308_turtle2/cmake")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_core/ee4308_turtle2Config.cmake" "/home/phantona/ee4308-proj2/build/ee4308_turtle2/ament_cmake_core/ee4308_turtle2Config-version.cmake" "DESTINATION" "share/ee4308_turtle2/cmake")
+# install(FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_core/ee4308_turtle2Config.cmake" "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_core/ee4308_turtle2Config-version.cmake" "DESTINATION" "share/ee4308_turtle2/cmake")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_core/ee4308_turtle2Config.cmake" "/home/phantona/ee4308L2/build/ee4308_turtle2/ament_cmake_core/ee4308_turtle2Config-version.cmake" "DESTINATION" "share/ee4308_turtle2/cmake")
 
-# install(FILES "/home/phantona/ee4308-proj2/src/ee4308_turtle2/package.xml" "DESTINATION" "share/ee4308_turtle2")
-ament_cmake_symlink_install_files("/home/phantona/ee4308-proj2/src/ee4308_turtle2" FILES "/home/phantona/ee4308-proj2/src/ee4308_turtle2/package.xml" "DESTINATION" "share/ee4308_turtle2")
+# install(FILES "/home/phantona/ee4308L2/src/ee4308_turtle2/package.xml" "DESTINATION" "share/ee4308_turtle2")
+ament_cmake_symlink_install_files("/home/phantona/ee4308L2/src/ee4308_turtle2" FILES "/home/phantona/ee4308L2/src/ee4308_turtle2/package.xml" "DESTINATION" "share/ee4308_turtle2")

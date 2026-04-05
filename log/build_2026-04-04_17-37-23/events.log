@@ -1,0 +1,590 @@
+[0.000000] (-) TimerEvent: {}
+[0.000370] (ee4308_bringup) JobQueued: {'identifier': 'ee4308_bringup', 'dependencies': OrderedDict()}
+[0.000447] (ee4308_drone) JobQueued: {'identifier': 'ee4308_drone', 'dependencies': OrderedDict()}
+[0.000496] (ee4308_turtle2) JobQueued: {'identifier': 'ee4308_turtle2', 'dependencies': OrderedDict()}
+[0.001976] (ee4308_bringup) JobStarted: {'identifier': 'ee4308_bringup'}
+[0.015252] (ee4308_drone) JobStarted: {'identifier': 'ee4308_drone'}
+[0.022453] (ee4308_turtle2) JobStarted: {'identifier': 'ee4308_turtle2'}
+[0.031853] (ee4308_bringup) JobProgress: {'identifier': 'ee4308_bringup', 'progress': 'cmake'}
+[0.033098] (ee4308_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/phantona/ee4308L2/src/ee4308_bringup', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_bringup'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_bringup', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_bringup', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.037518] (ee4308_drone) JobProgress: {'identifier': 'ee4308_drone', 'progress': 'cmake'}
+[0.038829] (ee4308_drone) Command: {'cmd': ['/usr/bin/cmake', '/home/phantona/ee4308L2/src/ee4308_drone', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_drone'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_drone', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_drone', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.045139] (ee4308_turtle2) JobProgress: {'identifier': 'ee4308_turtle2', 'progress': 'cmake'}
+[0.046758] (ee4308_turtle2) Command: {'cmd': ['/usr/bin/cmake', '/home/phantona/ee4308L2/src/ee4308_turtle2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308L2/install/ee4308_turtle2'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_turtle2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_turtle2', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099532] (-) TimerEvent: {}
+[0.188912] (ee4308_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.189512] (ee4308_turtle2) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.189877] (ee4308_drone) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199666] (-) TimerEvent: {}
+[0.290052] (ee4308_drone) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.290820] (ee4308_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.291247] (ee4308_turtle2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.299797] (-) TimerEvent: {}
+[0.322561] (ee4308_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.322936] (ee4308_drone) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.323143] (ee4308_turtle2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400021] (-) TimerEvent: {}
+[0.493803] (ee4308_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.494406] (ee4308_turtle2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.494771] (ee4308_drone) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.500156] (-) TimerEvent: {}
+[0.508131] (ee4308_turtle2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.508838] (ee4308_drone) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.509117] (ee4308_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.509739] (ee4308_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.510128] (ee4308_turtle2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.510459] (ee4308_drone) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.510612] (ee4308_drone) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.510821] (ee4308_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.511032] (ee4308_turtle2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.527859] (ee4308_turtle2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.528204] (ee4308_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.528399] (ee4308_drone) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600390] (-) TimerEvent: {}
+[0.701013] (-) TimerEvent: {}
+[0.714387] (ee4308_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.714947] (ee4308_drone) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.715167] (ee4308_turtle2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.729212] (ee4308_turtle2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.729567] (ee4308_drone) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.729988] (ee4308_turtle2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.730430] (ee4308_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.730809] (ee4308_turtle2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.731156] (ee4308_drone) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.731606] (ee4308_drone) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.731753] (ee4308_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.731886] (ee4308_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.770891] (ee4308_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.771154] (ee4308_turtle2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.771356] (ee4308_drone) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.801160] (-) TimerEvent: {}
+[0.901591] (-) TimerEvent: {}
+[1.002132] (-) TimerEvent: {}
+[1.047008] (ee4308_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.047685] (ee4308_turtle2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.047887] (ee4308_drone) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.102272] (-) TimerEvent: {}
+[1.174151] (ee4308_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.174624] (ee4308_drone) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.177325] (ee4308_turtle2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.202396] (-) TimerEvent: {}
+[1.287180] (ee4308_turtle2) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.287640] (ee4308_drone) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.302527] (-) TimerEvent: {}
+[1.396357] (ee4308_turtle2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.396669] (ee4308_drone) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.402679] (-) TimerEvent: {}
+[1.430203] (ee4308_bringup) StdoutLine: {'line': b'-- Configuring done (1.4s)\n'}
+[1.433282] (ee4308_turtle2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.433609] (ee4308_drone) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.438313] (ee4308_bringup) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.441545] (ee4308_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/phantona/ee4308L2/build/ee4308_bringup\n'}
+[1.449890] (ee4308_bringup) CommandEnded: {'returncode': 0}
+[1.450880] (ee4308_bringup) JobProgress: {'identifier': 'ee4308_bringup', 'progress': 'build'}
+[1.452776] (ee4308_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/phantona/ee4308L2/build/ee4308_bringup', '--', '-j16', '-l16'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_bringup', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_bringup', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.477357] (ee4308_turtle2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.477789] (ee4308_drone) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.502843] (-) TimerEvent: {}
+[1.523050] (ee4308_turtle2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.524995] (ee4308_drone) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.535278] (ee4308_bringup) CommandEnded: {'returncode': 0}
+[1.536527] (ee4308_bringup) JobProgress: {'identifier': 'ee4308_bringup', 'progress': 'install'}
+[1.555756] (ee4308_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/phantona/ee4308L2/build/ee4308_bringup'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_bringup', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_bringup', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.571668] (ee4308_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.572449] (ee4308_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.573439] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//launch/proj2_sim.launch.py\n'}
+[1.593484] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//launch/sim.launch.py\n'}
+[1.603028] (-) TimerEvent: {}
+[1.613198] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//launch/spawn_models.launch.py\n'}
+[1.632266] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//rviz/proj2.rviz\n'}
+[1.651372] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//params/proj2.yaml\n'}
+[1.670163] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//params/ros_gz_bridge_proj2.yaml\n'}
+[1.688330] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//maps/proj2_sim.pgm\n'}
+[1.703199] (-) TimerEvent: {}
+[1.703955] (ee4308_turtle2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.704296] (ee4308_drone) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.705914] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//maps/proj2_sim.yaml\n'}
+[1.713231] (ee4308_drone) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.713559] (ee4308_turtle2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.724994] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//worlds/empty_world.world\n'}
+[1.743447] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//worlds/turtlebot3_house.world\n'}
+[1.761241] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//worlds/turtlebot3_world.world\n'}
+[1.782358] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/README\n'}
+[1.799929] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/drone.urdf\n'}
+[1.803352] (-) TimerEvent: {}
+[1.818820] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/drone_proj2.sdf\n'}
+[1.836206] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/materials/textures/led.jpg\n'}
+[1.853850] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/materials/textures/spotlight.jpg\n'}
+[1.871136] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/iris.dae\n'}
+[1.888812] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/led.dae\n'}
+[1.903520] (-) TimerEvent: {}
+[1.906057] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/led_lamp.dae\n'}
+[1.911019] (ee4308_drone) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.911681] (ee4308_turtle2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.924431] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/propeller_ccw.dae\n'}
+[1.941164] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/propeller_cw.dae\n'}
+[1.949149] (ee4308_turtle2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.949457] (ee4308_drone) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.958929] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/spotlight.dae\n'}
+[1.976965] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/vi_camera.dae\n'}
+[1.990740] (ee4308_drone) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.991054] (ee4308_turtle2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.994041] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/vi_camera.jpg\n'}
+[2.003654] (-) TimerEvent: {}
+[2.014782] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/vi_sensor.dae\n'}
+[2.032930] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/vi_sensor.jpg\n'}
+[2.049574] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/x3.dae\n'}
+[2.066651] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/meshes/x3.jpg\n'}
+[2.083470] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/model.config\n'}
+[2.100318] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/drone/model.sdf\n'}
+[2.103810] (-) TimerEvent: {}
+[2.118997] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/turtle/turtle.urdf\n'}
+[2.137827] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/turtle/turtle_proj1.sdf\n'}
+[2.149955] (ee4308_turtle2) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.16 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[2.151560] (ee4308_drone) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.16 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[2.155803] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup//models/turtle/turtle_proj2.sdf\n'}
+[2.173430] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ament_index/resource_index/package_run_dependencies/ee4308_bringup\n'}
+[2.190569] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ament_index/resource_index/parent_prefix_path/ee4308_bringup\n'}
+[2.203957] (-) TimerEvent: {}
+[2.207801] (ee4308_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/environment/ament_prefix_path.sh\n'}
+[2.208296] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/environment/ament_prefix_path.dsv\n'}
+[2.225984] (ee4308_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/environment/path.sh\n'}
+[2.226453] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/environment/path.dsv\n'}
+[2.234058] (ee4308_drone) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.234621] (ee4308_turtle2) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.243829] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/local_setup.bash\n'}
+[2.261644] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/local_setup.sh\n'}
+[2.262814] (ee4308_drone) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.277719] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/local_setup.zsh\n'}
+[2.295334] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/local_setup.dsv\n'}
+[2.304097] (-) TimerEvent: {}
+[2.313553] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.dsv\n'}
+[2.331584] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ament_index/resource_index/packages/ee4308_bringup\n'}
+[2.342425] (ee4308_drone) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.348712] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.351439] (ee4308_turtle2) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.366054] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/cmake/ee4308_bringupConfig.cmake\n'}
+[2.383081] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/cmake/ee4308_bringupConfig-version.cmake\n'}
+[2.400630] (ee4308_bringup) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_bringup/share/ee4308_bringup/package.xml\n'}
+[2.401009] (ee4308_drone) StdoutLine: {'line': b'-- Found tf2: 0.36.19 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[2.404254] (-) TimerEvent: {}
+[2.405532] (ee4308_turtle2) StdoutLine: {'line': b'-- Found tf2: 0.36.19 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[2.415166] (ee4308_drone) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[2.418441] (ee4308_turtle2) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[2.422704] (ee4308_bringup) CommandEnded: {'returncode': 0}
+[2.450379] (ee4308_bringup) JobEnded: {'identifier': 'ee4308_bringup', 'rc': 0}
+[2.504433] (-) TimerEvent: {}
+[2.604365] (ee4308_drone) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[2.604675] (-) TimerEvent: {}
+[2.623315] (ee4308_drone) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.704850] (-) TimerEvent: {}
+[2.765826] (ee4308_turtle2) StdoutLine: {'line': b'-- Configuring done (2.7s)\n'}
+[2.795195] (ee4308_drone) StdoutLine: {'line': b'-- Configuring done (2.7s)\n'}
+[2.804992] (-) TimerEvent: {}
+[2.843021] (ee4308_turtle2) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.865367] (ee4308_turtle2) StdoutLine: {'line': b'-- Build files have been written to: /home/phantona/ee4308L2/build/ee4308_turtle2\n'}
+[2.874276] (ee4308_drone) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.887371] (ee4308_turtle2) CommandEnded: {'returncode': 0}
+[2.888419] (ee4308_turtle2) JobProgress: {'identifier': 'ee4308_turtle2', 'progress': 'build'}
+[2.889474] (ee4308_turtle2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/phantona/ee4308L2/build/ee4308_turtle2', '--', '-j16', '-l16'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_turtle2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_turtle2', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.898653] (ee4308_drone) StdoutLine: {'line': b'-- Build files have been written to: /home/phantona/ee4308L2/build/ee4308_drone\n'}
+[2.905241] (-) TimerEvent: {}
+[2.920493] (ee4308_drone) CommandEnded: {'returncode': 0}
+[2.921414] (ee4308_drone) JobProgress: {'identifier': 'ee4308_drone', 'progress': 'build'}
+[2.922286] (ee4308_drone) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/phantona/ee4308L2/build/ee4308_drone', '--', '-j16', '-l16'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_drone', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_drone', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.006306] (-) TimerEvent: {}
+[3.012346] (ee4308_turtle2) StdoutLine: {'line': b'[  6%] \x1b[32m\x1b[1mLinking CXX executable behavior\x1b[0m\n'}
+[3.012989] (ee4308_turtle2) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX executable controller\x1b[0m\n'}
+[3.013284] (ee4308_turtle2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/map_loader_component.dir/src/map_loader.cpp.o\x1b[0m\n'}
+[3.013497] (ee4308_turtle2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/planner_component.dir/src/planner.cpp.o\x1b[0m\n'}
+[3.014078] (ee4308_turtle2) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/controller_component.dir/src/controller.cpp.o\x1b[0m\n'}
+[3.023196] (ee4308_turtle2) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX executable map_loader\x1b[0m\n'}
+[3.023583] (ee4308_turtle2) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX executable planner\x1b[0m\n'}
+[3.026595] (ee4308_turtle2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/behavior_component.dir/src/behavior.cpp.o\x1b[0m\n'}
+[3.056266] (ee4308_drone) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX executable controller\x1b[0m\n'}
+[3.056696] (ee4308_drone) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX executable behavior\x1b[0m\n'}
+[3.056938] (ee4308_drone) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking CXX executable planner\x1b[0m\n'}
+[3.058921] (ee4308_drone) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/planner_component.dir/src/planner.cpp.o\x1b[0m\n'}
+[3.060470] (ee4308_drone) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/behavior_component.dir/src/behavior.cpp.o\x1b[0m\n'}
+[3.060929] (ee4308_drone) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX executable estimator\x1b[0m\n'}
+[3.061226] (ee4308_drone) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/controller_component.dir/src/controller.cpp.o\x1b[0m\n'}
+[3.080041] (ee4308_drone) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/estimator_component.dir/src/estimator.cpp.o\x1b[0m\n'}
+[3.107237] (-) TimerEvent: {}
+[3.207893] (-) TimerEvent: {}
+[3.310521] (-) TimerEvent: {}
+[3.411063] (-) TimerEvent: {}
+[3.427825] (ee4308_turtle2) StdoutLine: {'line': b'[ 62%] Built target behavior\n'}
+[3.429334] (ee4308_turtle2) StdoutLine: {'line': b'[ 62%] Built target controller\n'}
+[3.443154] (ee4308_turtle2) StdoutLine: {'line': b'[ 68%] Built target map_loader\n'}
+[3.458095] (ee4308_turtle2) StdoutLine: {'line': b'[ 75%] Built target planner\n'}
+[3.458563] (ee4308_drone) StdoutLine: {'line': b'[ 56%] Built target planner\n'}
+[3.460259] (ee4308_drone) StdoutLine: {'line': b'[ 62%] Built target controller\n'}
+[3.469533] (ee4308_drone) StdoutLine: {'line': b'[ 68%] Built target estimator\n'}
+[3.472935] (ee4308_drone) StdoutLine: {'line': b'[ 75%] Built target behavior\n'}
+[3.511217] (-) TimerEvent: {}
+[3.611684] (-) TimerEvent: {}
+[3.712269] (-) TimerEvent: {}
+[3.812711] (-) TimerEvent: {}
+[3.913277] (-) TimerEvent: {}
+[4.013827] (-) TimerEvent: {}
+[4.114389] (-) TimerEvent: {}
+[4.214931] (-) TimerEvent: {}
+[4.315486] (-) TimerEvent: {}
+[4.416013] (-) TimerEvent: {}
+[4.516560] (-) TimerEvent: {}
+[4.617132] (-) TimerEvent: {}
+[4.717681] (-) TimerEvent: {}
+[4.818201] (-) TimerEvent: {}
+[4.918726] (-) TimerEvent: {}
+[5.019274] (-) TimerEvent: {}
+[5.119813] (-) TimerEvent: {}
+[5.220363] (-) TimerEvent: {}
+[5.320908] (-) TimerEvent: {}
+[5.421564] (-) TimerEvent: {}
+[5.522096] (-) TimerEvent: {}
+[5.622662] (-) TimerEvent: {}
+[5.723221] (-) TimerEvent: {}
+[5.823754] (-) TimerEvent: {}
+[5.924258] (-) TimerEvent: {}
+[6.024777] (-) TimerEvent: {}
+[6.125322] (-) TimerEvent: {}
+[6.225817] (-) TimerEvent: {}
+[6.326314] (-) TimerEvent: {}
+[6.426832] (-) TimerEvent: {}
+[6.527420] (-) TimerEvent: {}
+[6.627978] (-) TimerEvent: {}
+[6.728541] (-) TimerEvent: {}
+[6.829067] (-) TimerEvent: {}
+[6.929627] (-) TimerEvent: {}
+[7.030179] (-) TimerEvent: {}
+[7.130667] (-) TimerEvent: {}
+[7.231212] (-) TimerEvent: {}
+[7.331758] (-) TimerEvent: {}
+[7.432493] (-) TimerEvent: {}
+[7.533025] (-) TimerEvent: {}
+[7.633582] (-) TimerEvent: {}
+[7.734161] (-) TimerEvent: {}
+[7.834698] (-) TimerEvent: {}
+[7.935233] (-) TimerEvent: {}
+[8.035736] (-) TimerEvent: {}
+[8.136288] (-) TimerEvent: {}
+[8.236849] (-) TimerEvent: {}
+[8.337425] (-) TimerEvent: {}
+[8.437966] (-) TimerEvent: {}
+[8.538524] (-) TimerEvent: {}
+[8.639086] (-) TimerEvent: {}
+[8.739687] (-) TimerEvent: {}
+[8.840222] (-) TimerEvent: {}
+[8.940771] (-) TimerEvent: {}
+[9.041347] (-) TimerEvent: {}
+[9.141834] (-) TimerEvent: {}
+[9.242281] (-) TimerEvent: {}
+[9.342703] (-) TimerEvent: {}
+[9.443166] (-) TimerEvent: {}
+[9.543606] (-) TimerEvent: {}
+[9.644062] (-) TimerEvent: {}
+[9.744620] (-) TimerEvent: {}
+[9.845178] (-) TimerEvent: {}
+[9.945660] (-) TimerEvent: {}
+[10.046211] (-) TimerEvent: {}
+[10.146760] (-) TimerEvent: {}
+[10.247269] (-) TimerEvent: {}
+[10.347807] (-) TimerEvent: {}
+[10.448371] (-) TimerEvent: {}
+[10.548911] (-) TimerEvent: {}
+[10.649436] (-) TimerEvent: {}
+[10.749895] (-) TimerEvent: {}
+[10.850392] (-) TimerEvent: {}
+[10.950874] (-) TimerEvent: {}
+[11.051412] (-) TimerEvent: {}
+[11.151922] (-) TimerEvent: {}
+[11.252447] (-) TimerEvent: {}
+[11.352954] (-) TimerEvent: {}
+[11.453507] (-) TimerEvent: {}
+[11.554009] (-) TimerEvent: {}
+[11.555840] (ee4308_turtle2) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libmap_loader_component.so\x1b[0m\n'}
+[11.654229] (-) TimerEvent: {}
+[11.754754] (-) TimerEvent: {}
+[11.855263] (-) TimerEvent: {}
+[11.892093] (ee4308_drone) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libplanner_component.so\x1b[0m\n'}
+[11.919235] (ee4308_turtle2) StdoutLine: {'line': b'[ 81%] Built target map_loader_component\n'}
+[11.955455] (-) TimerEvent: {}
+[12.055939] (-) TimerEvent: {}
+[12.156412] (-) TimerEvent: {}
+[12.247758] (ee4308_drone) StdoutLine: {'line': b'[ 81%] Built target planner_component\n'}
+[12.256583] (-) TimerEvent: {}
+[12.357038] (-) TimerEvent: {}
+[12.457508] (-) TimerEvent: {}
+[12.557926] (-) TimerEvent: {}
+[12.658404] (-) TimerEvent: {}
+[12.758823] (-) TimerEvent: {}
+[12.859246] (-) TimerEvent: {}
+[12.959672] (-) TimerEvent: {}
+[13.060094] (-) TimerEvent: {}
+[13.160552] (-) TimerEvent: {}
+[13.260979] (-) TimerEvent: {}
+[13.361413] (-) TimerEvent: {}
+[13.461837] (-) TimerEvent: {}
+[13.514319] (ee4308_turtle2) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libbehavior_component.so\x1b[0m\n'}
+[13.562024] (-) TimerEvent: {}
+[13.662482] (-) TimerEvent: {}
+[13.762922] (-) TimerEvent: {}
+[13.863382] (-) TimerEvent: {}
+[13.906705] (ee4308_turtle2) StdoutLine: {'line': b'[ 87%] Built target behavior_component\n'}
+[13.963550] (-) TimerEvent: {}
+[14.063959] (-) TimerEvent: {}
+[14.164397] (-) TimerEvent: {}
+[14.264798] (-) TimerEvent: {}
+[14.365197] (-) TimerEvent: {}
+[14.465594] (-) TimerEvent: {}
+[14.565997] (-) TimerEvent: {}
+[14.666402] (-) TimerEvent: {}
+[14.766789] (-) TimerEvent: {}
+[14.867192] (-) TimerEvent: {}
+[14.967583] (-) TimerEvent: {}
+[15.067980] (-) TimerEvent: {}
+[15.168388] (-) TimerEvent: {}
+[15.268774] (-) TimerEvent: {}
+[15.369202] (-) TimerEvent: {}
+[15.469604] (-) TimerEvent: {}
+[15.570000] (-) TimerEvent: {}
+[15.670427] (-) TimerEvent: {}
+[15.770833] (-) TimerEvent: {}
+[15.871228] (-) TimerEvent: {}
+[15.971620] (-) TimerEvent: {}
+[16.072011] (-) TimerEvent: {}
+[16.172417] (-) TimerEvent: {}
+[16.272828] (-) TimerEvent: {}
+[16.373223] (-) TimerEvent: {}
+[16.473618] (-) TimerEvent: {}
+[16.574026] (-) TimerEvent: {}
+[16.674450] (-) TimerEvent: {}
+[16.774864] (-) TimerEvent: {}
+[16.875292] (-) TimerEvent: {}
+[16.975720] (-) TimerEvent: {}
+[17.055738] (ee4308_turtle2) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library libplanner_component.so\x1b[0m\n'}
+[17.075898] (-) TimerEvent: {}
+[17.176368] (-) TimerEvent: {}
+[17.276782] (-) TimerEvent: {}
+[17.284217] (ee4308_turtle2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcontroller_component.so\x1b[0m\n'}
+[17.376964] (-) TimerEvent: {}
+[17.477447] (-) TimerEvent: {}
+[17.577848] (-) TimerEvent: {}
+[17.599974] (ee4308_turtle2) StdoutLine: {'line': b'[100%] Built target planner_component\n'}
+[17.678024] (-) TimerEvent: {}
+[17.778430] (-) TimerEvent: {}
+[17.818236] (ee4308_turtle2) StdoutLine: {'line': b'[100%] Built target controller_component\n'}
+[17.836730] (ee4308_turtle2) CommandEnded: {'returncode': 0}
+[17.837813] (ee4308_turtle2) JobProgress: {'identifier': 'ee4308_turtle2', 'progress': 'install'}
+[17.838613] (ee4308_turtle2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/phantona/ee4308L2/build/ee4308_turtle2'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_turtle2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_turtle2', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[17.850995] (ee4308_turtle2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.851562] (ee4308_turtle2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.851966] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/lib/ee4308_turtle2/map_loader\n'}
+[17.866847] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/lib/ee4308_turtle2/behavior\n'}
+[17.878588] (-) TimerEvent: {}
+[17.881635] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/lib/ee4308_turtle2/controller\n'}
+[17.897550] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/lib/ee4308_turtle2/planner\n'}
+[17.911596] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ament_index/resource_index/package_run_dependencies/ee4308_turtle2\n'}
+[17.925660] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ament_index/resource_index/parent_prefix_path/ee4308_turtle2\n'}
+[17.940551] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/environment/ament_prefix_path.sh\n'}
+[17.940939] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/environment/ament_prefix_path.dsv\n'}
+[17.955251] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/environment/path.sh\n'}
+[17.955657] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/environment/path.dsv\n'}
+[17.970048] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.bash\n'}
+[17.978748] (-) TimerEvent: {}
+[17.985335] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.sh\n'}
+[18.000073] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.zsh\n'}
+[18.014476] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/local_setup.dsv\n'}
+[18.028753] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.dsv\n'}
+[18.043328] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ament_index/resource_index/packages/ee4308_turtle2\n'}
+[18.058020] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ament_index/resource_index/rclcpp_components/ee4308_turtle2\n'}
+[18.072471] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[18.078879] (-) TimerEvent: {}
+[18.088443] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ee4308_turtle2Config.cmake\n'}
+[18.102474] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/ee4308_turtle2Config-version.cmake\n'}
+[18.116508] (ee4308_turtle2) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/package.xml\n'}
+[18.135961] (ee4308_turtle2) StdoutLine: {'line': b'-- Installing: /home/phantona/ee4308L2/install/ee4308_turtle2/lib/libmap_loader_component.so\n'}
+[18.138433] (ee4308_turtle2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/phantona/ee4308L2/install/ee4308_turtle2/lib/libmap_loader_component.so" to ""\n'}
+[18.139580] (ee4308_turtle2) StdoutLine: {'line': b'-- Installing: /home/phantona/ee4308L2/install/ee4308_turtle2/lib/libbehavior_component.so\n'}
+[18.143463] (ee4308_turtle2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/phantona/ee4308L2/install/ee4308_turtle2/lib/libbehavior_component.so" to ""\n'}
+[18.144298] (ee4308_turtle2) StdoutLine: {'line': b'-- Installing: /home/phantona/ee4308L2/install/ee4308_turtle2/lib/libcontroller_component.so\n'}
+[18.152332] (ee4308_turtle2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/phantona/ee4308L2/install/ee4308_turtle2/lib/libcontroller_component.so" to ""\n'}
+[18.153232] (ee4308_turtle2) StdoutLine: {'line': b'-- Installing: /home/phantona/ee4308L2/install/ee4308_turtle2/lib/libplanner_component.so\n'}
+[18.160992] (ee4308_turtle2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/phantona/ee4308L2/install/ee4308_turtle2/lib/libplanner_component.so" to ""\n'}
+[18.161457] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_map_loader_componentExport.cmake\n'}
+[18.161614] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_map_loader_componentExport-noconfig.cmake\n'}
+[18.161919] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_behavior_componentExport.cmake\n'}
+[18.162068] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_behavior_componentExport-noconfig.cmake\n'}
+[18.162434] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_controller_componentExport.cmake\n'}
+[18.162651] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_controller_componentExport-noconfig.cmake\n'}
+[18.162949] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_planner_componentExport.cmake\n'}
+[18.163122] (ee4308_turtle2) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_turtle2/share/ee4308_turtle2/cmake/export_planner_componentExport-noconfig.cmake\n'}
+[18.166833] (ee4308_turtle2) CommandEnded: {'returncode': 0}
+[18.179161] (-) TimerEvent: {}
+[18.187295] (ee4308_turtle2) JobEnded: {'identifier': 'ee4308_turtle2', 'rc': 0}
+[18.279334] (-) TimerEvent: {}
+[18.379687] (-) TimerEvent: {}
+[18.480043] (-) TimerEvent: {}
+[18.580420] (-) TimerEvent: {}
+[18.632153] (ee4308_drone) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libcontroller_component.so\x1b[0m\n'}
+[18.680574] (-) TimerEvent: {}
+[18.780934] (-) TimerEvent: {}
+[18.881321] (-) TimerEvent: {}
+[18.981700] (-) TimerEvent: {}
+[19.082067] (-) TimerEvent: {}
+[19.112532] (ee4308_drone) StdoutLine: {'line': b'[ 87%] Built target controller_component\n'}
+[19.182592] (-) TimerEvent: {}
+[19.282938] (-) TimerEvent: {}
+[19.383294] (-) TimerEvent: {}
+[19.483617] (-) TimerEvent: {}
+[19.583955] (-) TimerEvent: {}
+[19.684525] (-) TimerEvent: {}
+[19.784864] (-) TimerEvent: {}
+[19.885199] (-) TimerEvent: {}
+[19.985535] (-) TimerEvent: {}
+[20.085870] (-) TimerEvent: {}
+[20.186204] (-) TimerEvent: {}
+[20.286546] (-) TimerEvent: {}
+[20.386886] (-) TimerEvent: {}
+[20.487226] (-) TimerEvent: {}
+[20.587566] (-) TimerEvent: {}
+[20.687900] (-) TimerEvent: {}
+[20.788244] (-) TimerEvent: {}
+[20.888576] (-) TimerEvent: {}
+[20.988921] (-) TimerEvent: {}
+[21.089251] (-) TimerEvent: {}
+[21.189588] (-) TimerEvent: {}
+[21.289928] (-) TimerEvent: {}
+[21.390343] (-) TimerEvent: {}
+[21.490982] (-) TimerEvent: {}
+[21.591487] (-) TimerEvent: {}
+[21.691856] (-) TimerEvent: {}
+[21.792220] (-) TimerEvent: {}
+[21.892572] (-) TimerEvent: {}
+[21.992922] (-) TimerEvent: {}
+[22.082938] (ee4308_drone) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library libbehavior_component.so\x1b[0m\n'}
+[22.093051] (-) TimerEvent: {}
+[22.193390] (-) TimerEvent: {}
+[22.293743] (-) TimerEvent: {}
+[22.394090] (-) TimerEvent: {}
+[22.494517] (-) TimerEvent: {}
+[22.594852] (-) TimerEvent: {}
+[22.625996] (ee4308_drone) StdoutLine: {'line': b'[ 93%] Built target behavior_component\n'}
+[22.694979] (-) TimerEvent: {}
+[22.795545] (-) TimerEvent: {}
+[22.895862] (-) TimerEvent: {}
+[22.996179] (-) TimerEvent: {}
+[23.096487] (-) TimerEvent: {}
+[23.196798] (-) TimerEvent: {}
+[23.297151] (-) TimerEvent: {}
+[23.397654] (-) TimerEvent: {}
+[23.497962] (-) TimerEvent: {}
+[23.598278] (-) TimerEvent: {}
+[23.698589] (-) TimerEvent: {}
+[23.798902] (-) TimerEvent: {}
+[23.899212] (-) TimerEvent: {}
+[23.999523] (-) TimerEvent: {}
+[24.099830] (-) TimerEvent: {}
+[24.200158] (-) TimerEvent: {}
+[24.300471] (-) TimerEvent: {}
+[24.400789] (-) TimerEvent: {}
+[24.501133] (-) TimerEvent: {}
+[24.601446] (-) TimerEvent: {}
+[24.701762] (-) TimerEvent: {}
+[24.802073] (-) TimerEvent: {}
+[24.902403] (-) TimerEvent: {}
+[25.002731] (-) TimerEvent: {}
+[25.103040] (-) TimerEvent: {}
+[25.203482] (-) TimerEvent: {}
+[25.303826] (-) TimerEvent: {}
+[25.404149] (-) TimerEvent: {}
+[25.504479] (-) TimerEvent: {}
+[25.604798] (-) TimerEvent: {}
+[25.705092] (-) TimerEvent: {}
+[25.805442] (-) TimerEvent: {}
+[25.905759] (-) TimerEvent: {}
+[26.006052] (-) TimerEvent: {}
+[26.106375] (-) TimerEvent: {}
+[26.206682] (-) TimerEvent: {}
+[26.306994] (-) TimerEvent: {}
+[26.407325] (-) TimerEvent: {}
+[26.507626] (-) TimerEvent: {}
+[26.607964] (-) TimerEvent: {}
+[26.708297] (-) TimerEvent: {}
+[26.808608] (-) TimerEvent: {}
+[26.908930] (-) TimerEvent: {}
+[27.009278] (-) TimerEvent: {}
+[27.109597] (-) TimerEvent: {}
+[27.209926] (-) TimerEvent: {}
+[27.310269] (-) TimerEvent: {}
+[27.410610] (-) TimerEvent: {}
+[27.510934] (-) TimerEvent: {}
+[27.611278] (-) TimerEvent: {}
+[27.711632] (-) TimerEvent: {}
+[27.812022] (-) TimerEvent: {}
+[27.912370] (-) TimerEvent: {}
+[28.013123] (-) TimerEvent: {}
+[28.113513] (-) TimerEvent: {}
+[28.213833] (-) TimerEvent: {}
+[28.314181] (-) TimerEvent: {}
+[28.414803] (-) TimerEvent: {}
+[28.515146] (-) TimerEvent: {}
+[28.610513] (ee4308_drone) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libestimator_component.so\x1b[0m\n'}
+[28.615244] (-) TimerEvent: {}
+[28.715512] (-) TimerEvent: {}
+[28.815863] (-) TimerEvent: {}
+[28.916209] (-) TimerEvent: {}
+[29.016571] (-) TimerEvent: {}
+[29.116927] (-) TimerEvent: {}
+[29.217285] (-) TimerEvent: {}
+[29.317603] (-) TimerEvent: {}
+[29.391755] (ee4308_drone) StdoutLine: {'line': b'[100%] Built target estimator_component\n'}
+[29.404991] (ee4308_drone) CommandEnded: {'returncode': 0}
+[29.405700] (ee4308_drone) JobProgress: {'identifier': 'ee4308_drone', 'progress': 'install'}
+[29.406313] (ee4308_drone) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/phantona/ee4308L2/build/ee4308_drone'], 'cwd': '/home/phantona/ee4308L2/build/ee4308_drone', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'phantona', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2/lib:/home/phantona/ee4308-proj2/install/ee4308_drone/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/phantona', 'OLDPWD': '/home/phantona', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2961', 'SYSTEMD_EXEC_PID': '3424', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '27058', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/phantona/ee4308-proj2/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'phantona', 'JOURNAL_STREAM': '9:24340', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'phantona', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/phantona-Zenbook-UM3402YA-UM3402YA:@/tmp/.ICE-unix/3189,unix/phantona-Zenbook-UM3402YA-UM3402YA:/tmp/.ICE-unix/3189', 'INVOCATION_ID': 'ac6bdee4a8514a18895a099fe1d96e28', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZLTDN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:7a173658-08e7-4190-801c-9f637cfa4bca', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/phantona/ee4308L2/build/ee4308_drone', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/phantona/ee4308-proj2/install/ee4308_turtle2:/home/phantona/ee4308-proj2/install/ee4308_drone:/home/phantona/ee4308-proj2/install/ee4308_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[29.415520] (ee4308_drone) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.415945] (ee4308_drone) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[29.416311] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/lib/ee4308_drone/behavior\n'}
+[29.417705] (-) TimerEvent: {}
+[29.428390] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/lib/ee4308_drone/controller\n'}
+[29.438135] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/lib/ee4308_drone/estimator\n'}
+[29.447781] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/lib/ee4308_drone/planner\n'}
+[29.457130] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ament_index/resource_index/package_run_dependencies/ee4308_drone\n'}
+[29.466677] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ament_index/resource_index/parent_prefix_path/ee4308_drone\n'}
+[29.475442] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date symlink: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/environment/ament_prefix_path.sh\n'}
+[29.475692] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/environment/ament_prefix_path.dsv\n'}
+[29.484321] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date symlink: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/environment/path.sh\n'}
+[29.484523] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/environment/path.dsv\n'}
+[29.494153] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/local_setup.bash\n'}
+[29.504130] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/local_setup.sh\n'}
+[29.513743] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/local_setup.zsh\n'}
+[29.517817] (-) TimerEvent: {}
+[29.525096] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/local_setup.dsv\n'}
+[29.534979] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.dsv\n'}
+[29.545829] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ament_index/resource_index/packages/ee4308_drone\n'}
+[29.555598] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ament_index/resource_index/rclcpp_components/ee4308_drone\n'}
+[29.564899] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[29.573807] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[29.582835] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/ee4308_droneConfig.cmake\n'}
+[29.591780] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/ee4308_droneConfig-version.cmake\n'}
+[29.600608] (ee4308_drone) StdoutLine: {'line': b'-- Symlinking: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/package.xml\n'}
+[29.610754] (ee4308_drone) StdoutLine: {'line': b'-- Installing: /home/phantona/ee4308L2/install/ee4308_drone/lib/libbehavior_component.so\n'}
+[29.617934] (-) TimerEvent: {}
+[29.621023] (ee4308_drone) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/phantona/ee4308L2/install/ee4308_drone/lib/libbehavior_component.so" to ""\n'}
+[29.621688] (ee4308_drone) StdoutLine: {'line': b'-- Installing: /home/phantona/ee4308L2/install/ee4308_drone/lib/libcontroller_component.so\n'}
+[29.629595] (ee4308_drone) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/phantona/ee4308L2/install/ee4308_drone/lib/libcontroller_component.so" to ""\n'}
+[29.630294] (ee4308_drone) StdoutLine: {'line': b'-- Installing: /home/phantona/ee4308L2/install/ee4308_drone/lib/libestimator_component.so\n'}
+[29.646940] (ee4308_drone) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/phantona/ee4308L2/install/ee4308_drone/lib/libestimator_component.so" to ""\n'}
+[29.647647] (ee4308_drone) StdoutLine: {'line': b'-- Installing: /home/phantona/ee4308L2/install/ee4308_drone/lib/libplanner_component.so\n'}
+[29.649904] (ee4308_drone) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/phantona/ee4308L2/install/ee4308_drone/lib/libplanner_component.so" to ""\n'}
+[29.650134] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/export_behavior_componentExport.cmake\n'}
+[29.650266] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/export_behavior_componentExport-noconfig.cmake\n'}
+[29.650419] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/export_controller_componentExport.cmake\n'}
+[29.650521] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/export_controller_componentExport-noconfig.cmake\n'}
+[29.650685] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/export_estimator_componentExport.cmake\n'}
+[29.650784] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/export_estimator_componentExport-noconfig.cmake\n'}
+[29.650938] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/export_planner_componentExport.cmake\n'}
+[29.651049] (ee4308_drone) StdoutLine: {'line': b'-- Up-to-date: /home/phantona/ee4308L2/install/ee4308_drone/share/ee4308_drone/cmake/export_planner_componentExport-noconfig.cmake\n'}
+[29.653722] (ee4308_drone) CommandEnded: {'returncode': 0}
+[29.666352] (ee4308_drone) JobEnded: {'identifier': 'ee4308_drone', 'rc': 0}
+[29.667190] (-) EventReactorShutdown: {}

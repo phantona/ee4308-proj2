@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/phantona/ee4308L2/build/ee4308_drone/CMakeCache.txt is different than the directory /home/phantona/ee4308/build/ee4308_drone where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+gmake[2]: *** [CMakeFiles/estimator_component.dir/build.make:76: CMakeFiles/estimator_component.dir/src/estimator.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/estimator_component.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
