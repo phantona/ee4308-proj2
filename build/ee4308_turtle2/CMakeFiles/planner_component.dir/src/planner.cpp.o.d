@@ -1,5 +1,5 @@
 CMakeFiles/planner_component.dir/src/planner.cpp.o: \
- /home/phantona/ee4308L2/src/ee4308_turtle2/src/planner.cpp \
+ /home/phantona/ee4308-proj2/src/ee4308_turtle2/src/planner.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -725,4 +725,4 @@ CMakeFiles/planner_component.dir/src/planner.cpp.o: \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/srv/detail/get_plan__builder.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/srv/detail/get_plan__traits.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.hpp \
- /home/phantona/ee4308L2/src/ee4308_turtle2/include/ee4308_turtle2/core.hpp
+ /home/phantona/ee4308-proj2/src/ee4308_turtle2/include/ee4308_turtle2/core.hpp

@@ -1,8 +1,8 @@
-# Install script for directory: /home/phantona/ee4308L2/src/ee4308_bringup
+# Install script for directory: /home/phantona/ee4308-proj2/src/ee4308_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/phantona/ee4308L2/install/ee4308_bringup")
+  set(CMAKE_INSTALL_PREFIX "/home/phantona/ee4308-proj2/install/ee4308_bringup")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/phantona/ee4308L2/build/ee4308_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/phantona/ee4308-proj2/build/ee4308_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/phantona/ee4308L2/build/ee4308_bringup/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/phantona/ee4308-proj2/build/ee4308_bringup/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

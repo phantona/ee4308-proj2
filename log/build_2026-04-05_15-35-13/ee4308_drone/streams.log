@@ -1,0 +1,102 @@
+[0.028s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308-proj2/src/ee4308_drone -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308-proj2/install/ee4308_drone
+[0.197s] -- The C compiler identification is GNU 13.3.0
+[0.305s] -- The CXX compiler identification is GNU 13.3.0
+[0.342s] -- Detecting C compiler ABI info
+[0.538s] -- Detecting C compiler ABI info - done
+[0.552s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.553s] -- Detecting C compile features
+[0.554s] -- Detecting C compile features - done
+[0.572s] -- Detecting CXX compiler ABI info
+[0.767s] -- Detecting CXX compiler ABI info - done
+[0.783s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.783s] -- Detecting CXX compile features
+[0.784s] -- Detecting CXX compile features - done
+[0.816s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.111s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.252s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.384s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.511s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.552s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.601s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.652s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.850s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.861s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.065s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.105s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.148s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.327s] -- Found rclcpp_components: 28.1.16 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[2.418s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.450s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.539s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[2.598s] -- Found tf2: 0.36.19 (/opt/ros/jazzy/share/tf2/cmake)
+[2.613s] -- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[2.813s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[2.832s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.012s] -- Configuring done (3.0s)
+[3.087s] -- Generating done (0.1s)
+[3.111s] -- Build files have been written to: /home/phantona/ee4308-proj2/build/ee4308_drone
+[3.131s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/phantona/ee4308-proj2/src/ee4308_drone -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/phantona/ee4308-proj2/install/ee4308_drone
+[3.133s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_drone -- -j16 -l16
+[3.271s] [ 25%] [32m[1mLinking CXX executable controller[0m
+[3.271s] [ 25%] [32mBuilding CXX object CMakeFiles/controller_component.dir/src/controller.cpp.o[0m
+[3.271s] [ 25%] [32m[1mLinking CXX executable estimator[0m
+[3.271s] [ 25%] [32m[1mLinking CXX executable behavior[0m
+[3.271s] [ 31%] [32m[1mLinking CXX executable planner[0m
+[3.272s] [ 37%] [32mBuilding CXX object CMakeFiles/planner_component.dir/src/planner.cpp.o[0m
+[3.273s] [ 43%] [32mBuilding CXX object CMakeFiles/estimator_component.dir/src/estimator.cpp.o[0m
+[3.273s] [ 50%] [32mBuilding CXX object CMakeFiles/behavior_component.dir/src/behavior.cpp.o[0m
+[3.650s] [ 62%] Built target estimator
+[3.650s] [ 62%] Built target planner
+[3.666s] [ 68%] Built target controller
+[3.691s] [ 75%] Built target behavior
+[11.814s] [ 81%] [32m[1mLinking CXX shared library libplanner_component.so[0m
+[12.164s] [ 81%] Built target planner_component
+[17.690s] [ 87%] [32m[1mLinking CXX shared library libcontroller_component.so[0m
+[18.142s] [ 87%] Built target controller_component
+[20.927s] [ 93%] [32m[1mLinking CXX shared library libbehavior_component.so[0m
+[21.450s] [ 93%] Built target behavior_component
+[29.584s] [100%] [32m[1mLinking CXX shared library libestimator_component.so[0m
+[30.586s] [100%] Built target estimator_component
+[30.598s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_drone -- -j16 -l16
+[30.599s] Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308-proj2/build/ee4308_drone
+[30.608s] -- Install configuration: ""
+[30.608s] -- Execute custom install script
+[30.609s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/behavior
+[30.619s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/controller
+[30.629s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/estimator
+[30.639s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/ee4308_drone/planner
+[30.648s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/package_run_dependencies/ee4308_drone
+[30.657s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/parent_prefix_path/ee4308_drone
+[30.665s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/ament_prefix_path.sh
+[30.666s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/ament_prefix_path.dsv
+[30.675s] -- Up-to-date symlink: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/path.sh
+[30.675s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/environment/path.dsv
+[30.684s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.bash
+[30.693s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.sh
+[30.703s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.zsh
+[30.714s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/local_setup.dsv
+[30.724s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/package.dsv
+[30.733s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/packages/ee4308_drone
+[30.742s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ament_index/resource_index/rclcpp_components/ee4308_drone
+[30.751s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ament_cmake_export_targets-extras.cmake
+[30.760s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.769s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ee4308_droneConfig.cmake
+[30.778s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/ee4308_droneConfig-version.cmake
+[30.788s] -- Symlinking: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/package.xml
+[30.798s] -- Installing: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libbehavior_component.so
+[30.808s] -- Set non-toolchain portion of runtime path of "/home/phantona/ee4308-proj2/install/ee4308_drone/lib/libbehavior_component.so" to ""
+[30.809s] -- Installing: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libcontroller_component.so
+[30.816s] -- Set non-toolchain portion of runtime path of "/home/phantona/ee4308-proj2/install/ee4308_drone/lib/libcontroller_component.so" to ""
+[30.816s] -- Installing: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libestimator_component.so
+[30.834s] -- Set non-toolchain portion of runtime path of "/home/phantona/ee4308-proj2/install/ee4308_drone/lib/libestimator_component.so" to ""
+[30.834s] -- Installing: /home/phantona/ee4308-proj2/install/ee4308_drone/lib/libplanner_component.so
+[30.836s] -- Set non-toolchain portion of runtime path of "/home/phantona/ee4308-proj2/install/ee4308_drone/lib/libplanner_component.so" to ""
+[30.836s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_behavior_componentExport.cmake
+[30.837s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_behavior_componentExport-noconfig.cmake
+[30.837s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_controller_componentExport.cmake
+[30.837s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_controller_componentExport-noconfig.cmake
+[30.837s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_estimator_componentExport.cmake
+[30.837s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_estimator_componentExport-noconfig.cmake
+[30.837s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_planner_componentExport.cmake
+[30.837s] -- Up-to-date: /home/phantona/ee4308-proj2/install/ee4308_drone/share/ee4308_drone/cmake/export_planner_componentExport-noconfig.cmake
+[30.839s] Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/phantona/ee4308-proj2/build/ee4308_drone

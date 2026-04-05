@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/phantona/ee4308L2/src/ee4308_bringup
+CMAKE_SOURCE_DIR = /home/phantona/ee4308-proj2/src/ee4308_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/phantona/ee4308L2/build/ee4308_bringup
+CMAKE_BINARY_DIR = /home/phantona/ee4308-proj2/build/ee4308_bringup
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/phantona/ee4308L2/build/ee4308_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/phantona/ee4308L2/src/ee4308_bringup /home/phantona/ee4308L2/src/ee4308_bringup /home/phantona/ee4308L2/build/ee4308_bringup /home/phantona/ee4308L2/build/ee4308_bringup /home/phantona/ee4308L2/build/ee4308_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/phantona/ee4308-proj2/build/ee4308_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/phantona/ee4308-proj2/src/ee4308_bringup /home/phantona/ee4308-proj2/src/ee4308_bringup /home/phantona/ee4308-proj2/build/ee4308_bringup /home/phantona/ee4308-proj2/build/ee4308_bringup /home/phantona/ee4308-proj2/build/ee4308_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

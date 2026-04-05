@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/phantona/ee4308L2/build/ee4308_drone/rclcpp_components/node_main_controller.cpp" "CMakeFiles/controller.dir/rclcpp_components/node_main_controller.cpp.o" "gcc" "CMakeFiles/controller.dir/rclcpp_components/node_main_controller.cpp.o.d"
+  "/home/phantona/ee4308-proj2/build/ee4308_drone/rclcpp_components/node_main_controller.cpp" "CMakeFiles/controller.dir/rclcpp_components/node_main_controller.cpp.o" "gcc" "CMakeFiles/controller.dir/rclcpp_components/node_main_controller.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
