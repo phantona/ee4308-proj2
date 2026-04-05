@@ -124,22 +124,41 @@ namespace ee4308::drone
 
         // 2. Build Rotation Matrix Re/n (ECEF to NED)
         Eigen::Matrix3d Re_n;
-        Re_n << -init_sin_lat_ * init_cos_lon_, -init_sin_lon_, -init_cos_lat_ * init_cos_lon_,
-                -init_sin_lat_ * init_sin_lon_,  init_cos_lon_, -init_cos_lat_ * init_sin_lon_,
-                init_cos_lat_,                  0,              -init_sin_lat_;
+        Re_n << -init_sin_lat_ * init_cos_lon_, -init_sin_lat_ * init_sin_lon_,  init_cos_lat_,
+        -init_sin_lon_,                  init_cos_lon_,                  0,
+        -init_cos_lat_ * init_cos_lon_, -init_cos_lat_ * init_sin_lon_, -init_sin_lat_;
 
         // 3. Convert to NED frame
         // The formula is: NED = Re/n.transpose() * (Current_ECEF - Initial_ECEF)
-        Eigen::Vector3d NED = Re_n.transpose() * (ECEF - initial_ECEF_);
+        Eigen::Vector3d NED = Re_n * (ECEF - initial_ECEF_);
 
         // 4. Convert NED to World Frame (ENU)
         Eigen::Matrix3d Rm_n;
-        Rm_n << 0, 1,  0,  // Map X = NED East
-                1, 0,  0,  // Map Y = NED North
+        Rm_n << 0, 1,  0,  // Map X = 
+                1, 0 ,  0,  // Map Y = 
                 0, 0, -1;  // Map Z = -NED Down (Up)
+
+        // ADD THIS LINE temporary for debugging
+        RCLCPP_INFO(this->get_logger(), "DEBUG NED: N: %6.3f, E: %6.3f, D: %6.3f", NED(0), NED(1), NED(2));
 
         // Final GPS measurement in the World Frame
         Ygps_ = Rm_n * NED + initial_position_;
+
+
+        // -------------------------------------------------------------------------
+        // 2. THE GATE (Place it here!)
+        // -------------------------------------------------------------------------
+        // Compare the GPS measurement to where the filter currently thinks we are
+        double dist_to_gps = std::hypot(Ygps_(0) - Xx_(0), Ygps_(1) - Xy_(0));
+
+        // If the GPS measurement jumps more than 2.0 meters in a single step,
+        // it's likely a simulator glitch or an outlier.
+        if (dist_to_gps > 2.0)
+        {
+            RCLCPP_WARN(this->get_logger(), "GPS Glitch! Jump of %6.3f m rejected.", dist_to_gps);
+            return; // Exit the function early and skip the update
+        }
+        // -------------------------------------------------------------------------
 
         // --- KALMAN CORRECTION ---
         // 1. Observation Matrix for X and Y (2D states)
@@ -303,7 +322,7 @@ namespace ee4308::drone
         // =========
 
         // 1. Get current yaw and angular velocity
-        double psi = Xa_(0); 
+        double psi = Xa_(0);
         double omega_z = msg.angular_velocity.z;
 
         // 2. Rotate Body-Frame Accel to World-Frame Accel
@@ -400,7 +419,7 @@ namespace ee4308::drone
             nav_msgs::msg::Odometry odom;
 
             odom.header.stamp = this->now();
-            odom.child_frame_id = "";     //; std::string(this->get_namespace()) + "/base_footprint";
+            odom.child_frame_id = "base_link";     //; std::string(this->get_namespace()) + "/base_footprint";
             odom.header.frame_id = "map"; //; std::string(this->get_namespace()) + "/odom";
 
             odom.pose.pose.position.x = Xx_[0];
@@ -412,10 +431,20 @@ namespace ee4308::drone
             odom.pose.covariance[14] = Pz_(0, 0);
             odom.pose.covariance[35] = Pa_(0, 0);
 
-            odom.twist.twist.linear.x = Xx_[1];
-            odom.twist.twist.linear.y = Xy_[1];
+            double psi = Xa_[0];
+            double v_map_x = Xx_[1];
+            double v_map_y = Xy_[1];
+
+            // Rotate Map Velocity -> Body Velocity
+            double v_body_x = v_map_x * cos(psi) + v_map_y * sin(psi);
+            double v_body_y = -v_map_x * sin(psi) + v_map_y * cos(psi);
+
+            // Assign these to the odom message
+            odom.twist.twist.linear.x = v_body_x;
+            odom.twist.twist.linear.y = v_body_y;
             odom.twist.twist.linear.z = Xz_[1];
             odom.twist.twist.angular.z = Xa_[1];
+
             odom.twist.covariance[0] = Px_(1, 1);
             odom.twist.covariance[7] = Py_(1, 1);
             odom.twist.covariance[14] = Pz_(1, 1);
