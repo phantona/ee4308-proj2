@@ -1,2 +1,0 @@
-Invoking command in '/home/phantona/ee4308-proj2/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_bringup -- -j16 -l16
-Invoked command in '/home/phantona/ee4308-proj2/build/ee4308_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/phantona/ee4308-proj2/build/ee4308_bringup -- -j16 -l16
