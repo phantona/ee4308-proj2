@@ -31,13 +31,13 @@ drone:
       var_imu_x: 2.0 #changed by shyam
       var_imu_y: 2.0 #changed by shyam
       var_imu_z: 10.0 #changed by shyam
-      var_imu_a: 2.0  #changed by shyam, 1.0
+      var_imu_a: 2.0  #changed by shyam
       var_gps_x: 0.1
       var_gps_y: 0.1
       var_gps_z: 0.1
       var_baro: 10.0
       var_sonar: 0.01 #changed by shyam, im lowering this to trust the sonar more
-      var_magnet: 0.05  #changed by shyam, 0.1
+      var_magnet: 0.05  #changed by shyam
       use_sim_time: true
       use_ground_truth: false
       verbose: true

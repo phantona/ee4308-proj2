@@ -77,15 +77,15 @@ namespace ee4308::drone
     {
         Eigen::Vector3d ECEF;
 
-        // 1. Calculate the square of the first numerical eccentricity
+        // Calculating the square of the first numerical eccentricity
         double a = RAD_EQUATOR;
         double b = RAD_POLAR;
         double e_sq = 1.0 - (b * b) / (a * a);
 
-        // 2. Calculate the prime vertical radius of curvature
+        // here im calculate the prime vertical radius of curvature
         double N = a / std::sqrt(1.0 - e_sq * sin_lat * sin_lat);
 
-        // 3. Calculate ECEF coordinates
+        // here im calculate ECEF coordinates
         ECEF(0) = (N + alt) * cos_lat * cos_lon; // x_e
         ECEF(1) = (N + alt) * cos_lat * sin_lon; // y_e
         ECEF(2) = ((b * b) / (a * a) * N + alt) * sin_lat; // z_e
@@ -109,7 +109,7 @@ namespace ee4308::drone
         if (initialized_ecef_ == false)
         {
             initial_ECEF_ = getECEF_(sin_lat, cos_lat, sin_lon, cos_lon, alt);
-            // Save these for the rotation matrix
+            // saving these for the rotation matrix
             init_sin_lat_ = sin_lat;
             init_cos_lat_ = cos_lat;
             init_sin_lon_ = sin_lon;
@@ -119,71 +119,69 @@ namespace ee4308::drone
             return;
         }
 
-        // 1. Get current ECEF
+        // to get current ECEF
         Eigen::Vector3d ECEF = getECEF_(sin_lat, cos_lat, sin_lon, cos_lon, alt);
 
-        // 2. Build Rotation Matrix Re/n (ECEF to NED)
+        // building Rotation Matrix Re/n (ECEF to NED)
         Eigen::Matrix3d Re_n;
         Re_n << -init_sin_lat_ * init_cos_lon_, -init_sin_lat_ * init_sin_lon_,  init_cos_lat_,
         -init_sin_lon_,                  init_cos_lon_,                  0,
         -init_cos_lat_ * init_cos_lon_, -init_cos_lat_ * init_sin_lon_, -init_sin_lat_;
 
-        // 3. Convert to NED frame
+        // converting to NED frame
         // The formula is: NED = Re/n.transpose() * (Current_ECEF - Initial_ECEF)
         Eigen::Vector3d NED = Re_n * (ECEF - initial_ECEF_);
 
-        // 4. Convert NED to World Frame (ENU)
+        // now convert NED to World Frame (ENU)
         Eigen::Matrix3d Rm_n;
         Rm_n << 0, 1,  0,  // Map X = 
                 1, 0 ,  0,  // Map Y = 
                 0, 0, -1;  // Map Z = -NED Down (Up)
 
-        // ADD THIS LINE temporary for debugging
+        // SHYAM ADDED THIS LINE temporary for debugging
         RCLCPP_INFO(this->get_logger(), "DEBUG NED: N: %6.3f, E: %6.3f, D: %6.3f", NED(0), NED(1), NED(2));
 
-        // Final GPS measurement in the World Frame
+        // here is final GPS measurement in the World Frame
         Ygps_ = Rm_n * NED + initial_position_;
 
 
-        // -------------------------------------------------------------------------
-        // 2. THE GATE (Place it here!)
-        // -------------------------------------------------------------------------
-        // Compare the GPS measurement to where the filter currently thinks we are
+        
+        // shyam added gps gate
+        // compare the GPS measurement to where the filter currently thinks we are
         double dist_to_gps = std::hypot(Ygps_(0) - Xx_(0), Ygps_(1) - Xy_(0));
 
-        // If the GPS measurement jumps more than 2.0 meters in a single step,
-        // it's likely a simulator glitch or an outlier.
+        // if GPS measurement jumps more than 2.0 meters in a single step, likely a simulator glitch or an outlier.
         if (dist_to_gps > 2.0)
         {
             RCLCPP_WARN(this->get_logger(), "GPS Glitch! Jump of %6.3f m rejected.", dist_to_gps);
-            return; // Exit the function early and skip the update
+            return; // exit function early and skip the update
         }
-        // -------------------------------------------------------------------------
+        // shyam's gate ends here
 
-        // --- KALMAN CORRECTION ---
-        // 1. Observation Matrix for X and Y (2D states)
+        // --- SHYAM's KALMAN CORRECTION ---
+        // observation Matrix for X and Y (2D states)
         Eigen::RowVector2d H;
         H << 1, 0;
 
-        // Update X (2D state)
+        // to update X (2D state)
         double inno_x = Ygps_(0) - (H * Xx_)(0);
         double S_x = (H * Px_ * H.transpose())(0) + var_gps_x_;
         Eigen::Vector2d K_x = Px_ * H.transpose() / S_x;
         Xx_ = Xx_ + K_x * inno_x;
         Px_ = (Eigen::Matrix2d::Identity() - K_x * H) * Px_;
 
-        // Update Y (2D state)
+        // to update Y (2D state)
         double inno_y = Ygps_(1) - (H * Xy_)(0);
         double S_y = (H * Py_ * H.transpose())(0) + var_gps_y_;
         Eigen::Vector2d K_y = Py_ * H.transpose() / S_y;
         Xy_ = Xy_ + K_y * inno_y;
         Py_ = (Eigen::Matrix2d::Identity() - K_y * H) * Py_;
 
-        // 2. Observation Matrix for Z (3D state for bias)
+        // observation Matrix for Z (3D state for bias)
         Eigen::RowVector3d Hz; 
         Hz << 1, 0, 0; // GPS only sees altitude, not velocity or bias
 
-        // Update Z (3D state)
+        // to update Z (3D state)
         double inno_z = Ygps_(2) - (Hz * Xz_)(0);
         // CRITICAL: Must use Hz (3D) here, not H (2D)!
         double S_z = (Hz * Pz_ * Hz.transpose())(0) + var_gps_z_; 
@@ -223,21 +221,21 @@ namespace ee4308::drone
             return;
         }
 
-        // if in range, write to Ysonar_, and do the KF correction.
-        Eigen::RowVector3d H; // Note: RowVector3d
-        H << 1, 0, 0; // It only "sees" position, not velocity or baro_bias.  rest of the sonar math remains the same, Eigen will handle the 3×3 matrix math automatically now that Xz_ and Pz_ are resized.
+        // if in range, write to Ysonar_, and then we do the KF correction.
+        Eigen::RowVector3d H; // shyam Note: RowVector3d
+        H << 1, 0, 0; // it only "sees" position, not velocity or baro_bias.  rest of the sonar math remains same, Eigen will handle the 3×3 matrix math automatically now that Xz_ and Pz_ are resized okay
         
         double R = var_sonar_;
 
-        // 2. Innovation and Innovation Covariance
+        // innovation and Innovation Covariance
         // Note: (0) extracts the scalar from the 1x1 matrix result
         double inno = Ysonar_ - (H * Xz_)(0);
         double inno_covariance = (H * Pz_ * H.transpose())(0) + R; 
 
-        // 3. Kalman Gain (Now a 3x1 vector)
+        // shyam's kalman Gain (Now a 3x1 vector)
         Eigen::Vector3d K = (Pz_ * H.transpose()) / inno_covariance;
 
-        // 4. Update State (Xz_) and Covariance (Pz_)
+        // update State (Xz_) and Covariance (Pz_)
         Xz_ = Xz_ + K * inno;
         Eigen::Matrix3d I = Eigen::Matrix3d::Identity(); // 3x3 Identity matrix
         Pz_ = (I - K * H) * Pz_;
@@ -246,24 +244,24 @@ namespace ee4308::drone
     // ================================ Magnetic sub callback / EKF Correction ========================================
     void Estimator::callbackSubMagnetic_(const sensor_msgs::msg::MagneticField msg)
     {
-        // 1. Calculate the measured yaw from magnetic field vectors
-        // Note: We use atan2(y, x) to get the angle in radians
+        // calculate the measured yaw from magnetic field vectors
+        // we use atan2(y, x) to get the angle in radians
         Ymagnet_ = std::atan2(-msg.magnetic_field.y, msg.magnetic_field.x);
 
-        // 2. Observation Model: Magnetometer observes Yaw (index 0)
+        // observation model, whereby Magnetometer observes Yaw (index 0)
         Eigen::RowVector2d Ha;
         Ha << 1, 0;
         double R = var_magnet_;
 
-        // 3. Innovation (Measurement - Prediction)
-        // CRITICAL: We must limit the angle difference to [-PI, PI] or the filter will flip!
+        // innovation (Measurement - Prediction)
+        // shyam critical observation, We must limit the angle difference to [-PI, PI] or the filter will flip!
         double innovation = ee4308::limitAngle(Ymagnet_ - Xa_(0));
         double S = (Ha * Pa_ * Ha.transpose())(0) + R;
 
-        // 4. Kalman Gain
+        // kalman gain
         Eigen::Vector2d K = Pa_ * Ha.transpose() / S;
 
-        // 5. Update State and Covariance
+        // update state and covariance
         Xa_ = Xa_ + K * innovation;
         Xa_(0) = ee4308::limitAngle(Xa_(0)); //JW edited here
         Pa_ = (Eigen::Matrix2d::Identity() - K * Ha) * Pa_;
@@ -272,27 +270,27 @@ namespace ee4308::drone
     // ================================ Baro sub callback / EKF Correction ========================================
     void Estimator::callbackSubBaro_(const sensor_msgs::msg::FluidPressure msg)
     {
-        // 1. Convert Pressure (Pa) to Altitude (m)
-        // Using the WGS84 standard atmospheric model constant: 0.1903
+        // convert pressure (Pa) to altitude (m)
+        // im using the WGS84 standard atmospheric model constant: 0.1903
         Ybaro_ = 44330.0 * (1.0 - std::pow(msg.fluid_pressure / SEA_LEVEL_PA, 0.1903));
 
         if (!std::isfinite(Ybaro_)) return;
 
-        // 2. Augmented Observation Model
+        // this is the augmented Observation Model
         Eigen::RowVector3d Hb;
         Hb << 1.0, 0.0, 1.0; // Baro measurement = Altitude (1.0) + Bias (1.0)
     
         double R = var_baro_;
 
-        // 3. Innovation and Innovation Covariance
+        // innovation and innovation Covariance
         double inno = Ybaro_ - (Hb * Xz_)(0);
         double S = (Hb * Pz_ * Hb.transpose())(0) + R;
 
-        // 4. Kalman Gain (3x1 vector)
+        // kalman gain (3x1 vector)
         Eigen::Vector3d K = (Pz_ * Hb.transpose()) / S;
 
-        // 5. Update State and Covariance
-        // This allows the filter to partition error into actual motion vs. sensor bias
+        // update state and covariance
+        // this allows the filter to partition error into actual motion vs. sensor bias
         Xz_ = Xz_ + K * inno;
         Eigen::Matrix3d I = Eigen::Matrix3d::Identity();
         Pz_ = (I - K * Hb) * Pz_;
@@ -322,11 +320,11 @@ namespace ee4308::drone
         // std::cos(), std::sin()
         // =========
 
-        // 1. Get current yaw and angular velocity
+        // get current yaw and angular velocity
         double psi = Xa_(0);
         double omega_z = msg.angular_velocity.z;
 
-        // 2. Rotate Body-Frame Accel to World-Frame Accel
+        // rotate Body-Frame Accel to World-Frame Accel
         double ux = msg.linear_acceleration.x;
         double uy = msg.linear_acceleration.y;
         double uz = msg.linear_acceleration.z;
@@ -334,7 +332,7 @@ namespace ee4308::drone
         double ay = ux * std::sin(psi) + uy * std::cos(psi);
         double az = uz - GRAVITY;// Coordinate acceleration (subtracting g)
 
-        // 3. Define the Transition Matrices for X, Y, and Yaw (2-state)
+        // define the Transition Matrices for X, Y, and Yaw (2-state)
         Eigen::Matrix2d F;
         F << 1, dt,
              0, 1;
@@ -343,16 +341,16 @@ namespace ee4308::drone
         W << 0.5 * dt * dt,
              dt;
 
-        // 3b. Define the Transition Matrices for Z (3-state)
+        // define the Transition Matrices for Z (3-state)
         Eigen::Matrix3d Fz;
         Fz << 1, dt, 0,
               0, 1,  0,
-              0, 0,  1; // The bias is assumed constant in prediction
+              0, 0,  1; // over here the bias is assumed constant in prediction
 
         Eigen::Vector3d Wz;
         Wz << 0.5 * dt * dt,
               dt,
-              0; // Acceleration does not directly affect barometer bias
+              0; // acceleration does not directly affect barometer bias
 
         // --- PREDICTION UPDATES ---
         
@@ -360,9 +358,9 @@ namespace ee4308::drone
         Xx_ = F * Xx_ + W * ax;
         Xy_ = F * Xy_ + W * ay;
         Xa_ = F * Xa_ + W * omega_z;
-        Xa_(0) = ee4308::limitAngle(Xa_(0)); //JW edited here
+        Xa_(0) = ee4308::limitAngle(Xa_(0));
 
-        // NEW 3D update for Z
+        // new 3d update for Z
         Xz_ = Fz * Xz_ + Wz * az;
 
         // --- COVARIANCE UPDATES (P = FPF' + WQW') ---
@@ -372,7 +370,7 @@ namespace ee4308::drone
         Py_ = F * Py_ * F.transpose() + W * var_imu_y_ * W.transpose();
         Pa_ = F * Pa_ * F.transpose() + W * var_imu_a_ * W.transpose();
 
-        // NEW 3D covariance update for Z
+        // new 3d covariance update for Z
         Pz_ = Fz * Pz_ * Fz.transpose() + Wz * var_imu_z_ * Wz.transpose();
     }
 
@@ -437,11 +435,11 @@ namespace ee4308::drone
             double v_map_x = Xx_[1];
             double v_map_y = Xy_[1];
 
-            // Rotate Map Velocity -> Body Velocity
+            // rotate Map Velocity -> Body Velocity
             double v_body_x = v_map_x * cos(psi) + v_map_y * sin(psi);
             double v_body_y = -v_map_x * sin(psi) + v_map_y * cos(psi);
 
-            // Assign these to the odom message
+            // assign these to the odom message
             odom.twist.twist.linear.x = v_body_x;
             odom.twist.twist.linear.y = v_body_y;
             odom.twist.twist.linear.z = Xz_[1];
